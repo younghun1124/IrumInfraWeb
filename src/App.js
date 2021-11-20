@@ -6,10 +6,17 @@ function App() {
     return (
         <>
             <Layout>
-                <Header style={{ background: 'white' }}>
+                <Header
+                    style={{
+                        position: 'fixed',
+                        zIndex: 1,
+                        width: '100%',
+                        background: 'white',
+                    }}
+                >
                     <Nav />
                 </Header>
-                <Content>
+                <Content style={{ background: 'white', padding: '16px' }}>
                     <Routes>
                         <Route path='/' element={<Home />} />
                     </Routes>
