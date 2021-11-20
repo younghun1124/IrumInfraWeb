@@ -16,7 +16,13 @@ function App() {
                 >
                     <Nav />
                 </Header>
-                <Content style={{ background: 'white', padding: '16px' }}>
+                <Content
+                    style={{
+                        background: 'white',
+                        padding: '16px',
+                        marginTop: '64px',
+                    }}
+                >
                     <Routes>
                         <Route path='/' element={<Home />} />
                     </Routes>

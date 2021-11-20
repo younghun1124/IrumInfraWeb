@@ -7,55 +7,54 @@ import {
     SyncOutlined,
     TrophyOutlined,
 } from '@ant-design/icons';
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 const Home = () => {
-    const contentStyle = {
-        height: '770px',
-        color: '#fff',
-        lineHeight: '770px',
-        textAlign: 'center',
-        background: '#364d79',
-    };
     return (
         <>
             <Carousel autoplay>
-                <div>
-                    <h3 style={contentStyle}>1</h3>
-                </div>
-                <div>
-                    <h3 style={contentStyle}>2</h3>
-                </div>
-                <div>
-                    <h3 style={contentStyle}>3</h3>
-                </div>
-                <div>
-                    <h3 style={contentStyle}>4</h3>
-                </div>
-                {/* <CarouselUnit /> */}
+                {/* <CarouselUnit src='Home/Intro-idc.jpg'></CarouselUnit> */}
+
+                <CarouselUnit
+                    src='Home/Intro-idc.jpg'
+                    text='고객과 미래를 함께하는'
+                    title='(주) 이룸인프라'
+                />
+                <CarouselUnit
+                    src='Home/Intro-idc2.jpg'
+                    text='Lenovo Server Storage NetWork'
+                    title='ThinkSystem'
+                />
+                <CarouselUnit
+                    src='Home/Intro-idc3.jpg'
+                    text='Lenovo Workstation'
+                    title='ThinkStation'
+                />
             </Carousel>
+
             <Title level={2}>고객의 만족을 최우선으로 생각합니다</Title>
             <Divider />
             <Title level={2}>이룸인프라는</Title>
             <Row justify='space-between'>
                 <Col span={6}>
                     <QuestionCircleOutlined style={IconStyle} />
-                    고객을 위해 고민합니다
+
+                    <p>고객을 위해 고민합니다</p>
                 </Col>
                 <Col span={6}>
                     <RiseOutlined style={IconStyle} />
-                    고객과 함께 성장합니다
+                    <p>고객과 함께 성장합니다</p>
                 </Col>
                 <Col span={6}>
                     <SyncOutlined style={IconStyle} />
-                    고객의 믿음에 보답합니다
+                    <p>고객의 믿음에 보답합니다</p>
                 </Col>
                 <Col span={6}>
                     <TrophyOutlined style={IconStyle} />
-                    고객과 함께 1등 하겠습니다
+                    <p>고객과 함께 1등 하겠습니다</p>
                 </Col>
             </Row>
             <Divider />
-            <Row justify='space-between'>
+            <Row gutter={16} justify='space-between'>
                 <Col span={8}>
                     <Title level={4}>하드웨어 사업</Title>
                     <StyledImg src='hw.jpg' alt='하드웨어 사업' />
@@ -90,28 +89,39 @@ const Home = () => {
 };
 const IconStyle = {
     fontSize: '50px',
-    color: '#f3cca3',
 };
-const CarouselUnit = ({ src }) => {
-    const contentStyle = {
-        height: '540px',
-        color: '#fff',
-        lineHeight: '540px',
-        textAlign: 'center',
-    };
+
+const CarouselUnit = ({ src, children, title, text }) => {
+    console.log(children);
+    const CarouselDiv = styled.div`
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 540px;
+        background-image: url(${src});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: fit;
+    `;
+
+    const Text = styled.div`
+        margin: 10px;
+        font-size: 20px;
+    `;
+    const Title = styled.div`
+        margin: 10px;
+        font-size: 70px;
+    `;
     return (
-        <div
-            style={{
-                ...contentStyle,
-                backgroundImage: `url(${src})`,
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-            }}
-        >
-            <Title level={4}>고객과 미래를 함께하는</Title>
-            <Title level={2}>{`(주) 이룸인프라`}</Title>
-        </div>
+        <CarouselDiv>
+            <div>
+                <Text>{text}</Text>
+                <Title>{title}</Title>
+            </div>
+        </CarouselDiv>
     );
 };
 export default Home;
