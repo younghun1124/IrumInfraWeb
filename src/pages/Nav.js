@@ -6,7 +6,6 @@ const { SubMenu } = Menu;
 const Nav = () => {
     const [current, setCurret] = useState('mail');
     const handleClick = (e) => {
-        console.log('click ', e);
         setCurret(e.key);
     };
     return (
@@ -29,31 +28,32 @@ const Nav = () => {
                         mode='horizontal'
                     >
                         <SubMenu key='company' title='회사소개'>
-                            <Menu.Item key='setting:1'>인사말</Menu.Item>
-                            <Menu.Item key='setting:2'>사업영역</Menu.Item>
+                            <Menu.Item key='setting:1'>
+                                <Link to='/introduction/welcome'>인사말</Link>
+                            </Menu.Item>
+                            <Menu.Item key='setting:2'>
+                                <Link to='/introduction/welcome'>사업영역</Link>
+                            </Menu.Item>
                             <Menu.Item key='setting:3'>조직도</Menu.Item>
-                            <Menu.Item key='setting:4'>회사비전</Menu.Item>
                             <Menu.Item key='setting:5'>주요협력사</Menu.Item>
                             <Menu.Item key='setting:6'>찾아오시는 길</Menu.Item>
                         </SubMenu>
-                        <SubMenu key='business' title='사업소개'>
-                            <Menu.ItemGroup title='하드웨어 사업'>
-                                <Menu.Item key='setting:7'>Server</Menu.Item>
-                                <Menu.Item key='setting:8'>Storage</Menu.Item>
-                                <Menu.Item key='setting:9'>
-                                    Workstation
-                                </Menu.Item>
-                            </Menu.ItemGroup>
-
-                            <Menu.Item key='setting:4'>솔루션 사업</Menu.Item>
+                        <SubMenu key='business' title='H/W 사업'>
+                            <Menu.Item key='setting:7'>
+                                <Link to='hardware'>Server</Link>
+                            </Menu.Item>
+                            <Menu.Item key='setting:8'>Storage</Menu.Item>
+                            <Menu.Item key='setting:9'>Workstation</Menu.Item>
+                            <Menu.Item key='setting:10'>PC</Menu.Item>
+                        </SubMenu>
+                        <SubMenu key='solution' title='솔루션 사업'>
+                            <Menu.Item key='setting:11'>Nutanix</Menu.Item>
+                            <Menu.Item key='setting:12'>Vmware</Menu.Item>
                         </SubMenu>
 
-                        <SubMenu key='service' title='서비스'>
-                            <Menu.Item key='setting:10'>IT 유지보수</Menu.Item>
-                            <Menu.Item key='setting:11'>IT 인력파견</Menu.Item>
-                            <Menu.Item key='setting:12'>
-                                IT 장비 이전 설치
-                            </Menu.Item>
+                        <SubMenu key='service' title='서비스 사업'>
+                            <Menu.Item key='setting:13'>IT유지보수</Menu.Item>
+                            <Menu.Item key='setting:14'>IT장비이전</Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Col>

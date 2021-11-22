@@ -1,6 +1,7 @@
-import { Home, Nav } from './pages';
+import { Home, Nav, Intro } from './pages';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Layout } from 'antd';
+import Hardware from './pages/Hardware';
 const { Header, Content, Footer } = Layout;
 function App() {
     return (
@@ -25,6 +26,8 @@ function App() {
                 >
                     <Routes>
                         <Route path='/' element={<Home />} />
+                        <Route path='/introduction/*' element={<Intro />} />
+                        <Route path='/hardware/*' element={<Hardware />} />
                     </Routes>
                 </Content>
                 <Footer>
