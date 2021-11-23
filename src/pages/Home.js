@@ -108,7 +108,6 @@ const IconStyle = {
 };
 
 const CarouselUnit = ({ src, children, title, text }) => {
-    console.log(children);
     const CarouselDiv = styled.div`
         color: white;
         display: flex;
