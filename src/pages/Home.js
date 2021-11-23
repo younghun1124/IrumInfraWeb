@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Typography, Divider, Row, Col, Space, Card } from 'antd';
+import BuisnessArea from '../components/BusinessArea';
 import styled from '@emotion/styled';
 import {
     QuestionCircleOutlined,
@@ -15,7 +16,7 @@ const { Title, Paragraph, Text } = Typography;
 const Home = () => {
     return (
         <>
-            <Carousel autoplay>
+            <Carousel effect='fade' dots={false} autoplay>
                 {/* <CarouselUnit src='Home/Intro-idc.jpg'></CarouselUnit> */}
 
                 <CarouselUnit
@@ -34,7 +35,7 @@ const Home = () => {
                     title='ThinkStation'
                 />
             </Carousel>
-            <Row style={{ height: '500px' }} justify='center' align='middle'>
+            <Row style={{ height: '400px' }} justify='center' align='middle'>
                 <Title level={2}>
                     <Fade cascade right big>
                         고객의 만족을 최우선으로 생각합니다
@@ -43,10 +44,11 @@ const Home = () => {
             </Row>
 
             <Divider />
-            <Title style={{ textAlign: 'center' }} level={2}>
-                이룸인프라는
-            </Title>
+
             <Slide bottom cascade>
+                <Title style={{ textAlign: 'center' }} level={2}>
+                    이룸인프라는
+                </Title>
                 <Row wrap={true} justify='space-between'>
                     <Col css={FlexCenter} span={6}>
                         <QuestionCircleOutlined style={IconStyle} />
@@ -64,39 +66,11 @@ const Home = () => {
                         <TrophyOutlined style={IconStyle} />
                         <p>고객과 함께 1등 하겠습니다</p>
                     </Col>
+                    <Divider />
                 </Row>
             </Slide>
-            <Divider />
-            <Fade bottom cascade>
-                <Row wrap={true} gutter={16} justify='space-between'>
-                    <Col css={FlexCenter} span={8}>
-                        <Title level={4}>하드웨어 사업</Title>
-                        <StyledImg src='hw.jpg' alt='하드웨어 사업' />
-                        <Paragraph>
-                            강력한 성능의 Rack & Tower Server 관리가 용이하고
-                            확장이 간편한 Storage 압도적 성능과 내구성의
-                            Workstation
-                        </Paragraph>
-                    </Col>
-                    <Col css={FlexCenter} span={8}>
-                        <Title level={4}>솔루션 사업</Title>
-                        <StyledImg src='sol2.png' alt='하드웨어 사업' />
-                        <Paragraph>
-                            강력한 성능의 모바일 워크스테이션 ThinkPad 압도적인
-                            성능과 내구성을 지닌 ThinkStation
-                        </Paragraph>
-                    </Col>
 
-                    <Col css={FlexCenter} span={8}>
-                        <Title level={4}>Contact us</Title>
-                        <StyledImg src='call center.png' alt='하드웨어 사업' />
-                        <Paragraph>
-                            TEL. 02-8577-008 FAX. 02-8577-009 E-mail.
-                            mhjung@iruminfra.co.kr
-                        </Paragraph>
-                    </Col>
-                </Row>
-            </Fade>
+            <BuisnessArea />
             <Divider />
             <Title level={2}>Business Partner</Title>
             <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
@@ -119,7 +93,7 @@ const CarouselUnit = ({ src, children, title, text }) => {
         background-image: url(${src});
         background-position: center;
         background-repeat: no-repeat;
-        background-size: fit;
+        background-size: cover;
     `;
 
     const Text = styled.div`
@@ -148,7 +122,3 @@ const FlexCenter = css`
     flex-direction: column;
 `;
 export default Home;
-
-const StyledImg = styled.img`
-    width: 300px;
-`;
