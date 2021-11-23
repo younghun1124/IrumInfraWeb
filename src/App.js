@@ -33,7 +33,7 @@ function App() {
                 <Footer>
                     <p>
                         <img
-                            src='Logo.png'
+                            src='/Logo.png'
                             alt='이룸인프라 로고'
                             style={{ width: '100px' }}
                         />
