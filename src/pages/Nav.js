@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const { SubMenu } = Menu;
 const Nav = () => {
-    const [current, setCurret] = useState('mail');
+    const [current, setCurret] = useState('0');
     const handleClick = (e) => {
         setCurret(e.key);
     };
@@ -16,7 +16,7 @@ const Nav = () => {
                         <img
                             src='/Logo.png'
                             alt='이룸인프라 로고'
-                            style={{ width: '100px' }}
+                            style={{ width: '144px' }}
                         />
                     </Link>
                 </Col>
@@ -37,12 +37,20 @@ const Nav = () => {
                                 </Link>
                             </Menu.Item>
                             <Menu.Item key='setting:3'>
-                                <Link to='introduction/organizational'>
+                                <Link to='introduction/organization'>
                                     조직도
                                 </Link>
                             </Menu.Item>
-                            <Menu.Item key='setting:5'>주요협력사</Menu.Item>
-                            <Menu.Item key='setting:6'>찾아오시는 길</Menu.Item>
+                            <Menu.Item key='setting:5'>
+                                <Link to='introduction/partners'>
+                                    주요협력사
+                                </Link>
+                            </Menu.Item>
+                            <Menu.Item key='setting:6'>
+                                <Link to='introduction/location'>
+                                    찾아오시는 길
+                                </Link>
+                            </Menu.Item>
                         </SubMenu>
                         <SubMenu key='business' title='H/W 사업'>
                             <Menu.Item key='setting:7'>
