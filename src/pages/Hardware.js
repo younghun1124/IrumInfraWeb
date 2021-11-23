@@ -9,7 +9,10 @@ const Hardware = () => {
     return (
         <>
             <Routes>
-                <Route path='' element={<Server />} />
+                <Route path='server' element={<FrameWrapper />} />
+                <Route path='storage' element={<FrameWrapper />} />
+                <Route path='workstation' element={<FrameWrapper />} />
+                <Route path='pc' element={<FrameWrapper />} />
             </Routes>
         </>
     );
@@ -17,29 +20,27 @@ const Hardware = () => {
 
 export default Hardware;
 
-const Server = () => {
-    const [scrollHeight, setScrollHeight] = useState('0px');
-    const frame = useRef();
-
+function FrameWrapper() {
+    const ref = useRef();
+    const [height, setHeight] = useState('0px');
+    const onLoad = () => {
+        setHeight(ref.current.contentWindow.document.body.scrollHeight + 'px');
+    };
     return (
-        <div>
-            <iframe
-                title='title'
-                url='https://www.op.gg/'
-                frameBorder='0'
-                id='myId'
-                width=' 100%'
-                height={scrollHeight}
-                display='initial'
-                ref={frame}
-                onload={() => {
-                    // const obj = frame.current;
-                    console.log('하이');
-                    // setScrollHeight(
-                    //     obj.contentWindow.document.body.scrollHeight + 'px',
-                    // );
-                }}
-            />
-        </div>
+        <iframe
+            title='title'
+            ref={ref}
+            onLoad={onLoad}
+            id='myFrame'
+            src='/iframe/hardware/test.htm'
+            width='100%'
+            height={height}
+            scrolling='no'
+            frameBorder='0'
+            style={{
+                width: '100%',
+                overflow: 'auto',
+            }}
+        ></iframe>
     );
-};
+}
