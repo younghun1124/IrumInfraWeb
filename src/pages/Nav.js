@@ -16,7 +16,7 @@ const Nav = () => {
                         <img
                             src='/Logo.png'
                             alt='이룸인프라 로고'
-                            style={{ width: '144px' }}
+                            style={{ width: '100px' }}
                         />
                     </Link>
                 </Col>
