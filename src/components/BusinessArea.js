@@ -1,5 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+
 import { Row, Col, Typography } from 'antd';
 /** @jsxImportSource @emotion/react */
 import { jsx, css } from '@emotion/react';
@@ -8,8 +9,8 @@ const { Title, Paragraph } = Typography;
 
 function BusinessArea() {
     return (
-        <Fade bottom cascade>
-            <Row wrap={true} gutter={16} justify='space-between'>
+        <Row gutter={16} justify='space-between'>
+            <Fade bottom cascade>
                 <Col css={FlexCenter} span={8}>
                     <Title level={4}>하드웨어 사업</Title>
                     <StyledImg src='/hw.jpg' alt='하드웨어 사업' />
@@ -18,6 +19,8 @@ function BusinessArea() {
                         간편한 Storage 압도적 성능과 내구성의 Workstation
                     </Paragraph>
                 </Col>
+            </Fade>
+            <Fade bottom cascade>
                 <Col css={FlexCenter} span={8}>
                     <Title level={4}>솔루션 사업</Title>
                     <StyledImg src='/sol2.png' alt='하드웨어 사업' />
@@ -26,7 +29,8 @@ function BusinessArea() {
                         성능과 내구성을 지닌 ThinkStation
                     </Paragraph>
                 </Col>
-
+            </Fade>
+            <Fade bottom cascade>
                 <Col css={FlexCenter} span={8}>
                     <Title level={4}>Contact us</Title>
                     <StyledImg src='/call center.png' alt='하드웨어 사업' />
@@ -35,8 +39,8 @@ function BusinessArea() {
                         mhjung@iruminfra.co.kr
                     </Paragraph>
                 </Col>
-            </Row>
-        </Fade>
+            </Fade>
+        </Row>
     );
 }
 export default BusinessArea;
