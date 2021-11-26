@@ -12,6 +12,7 @@ import {
 import { jsx, css } from '@emotion/react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+
 const { Title, Paragraph, Text } = Typography;
 const Home = () => {
     return (
@@ -45,32 +46,36 @@ const Home = () => {
 
             <Divider />
 
-            <Slide bottom cascade>
-                <Title style={{ textAlign: 'center' }} level={2}>
-                    이룸인프라는
-                </Title>
-                <Row wrap={true} justify='space-between'>
-                    <Col css={FlexCenter} span={6}>
-                        <QuestionCircleOutlined style={IconStyle} />
-                        <p>고객을 위해 고민합니다</p>
-                    </Col>
-                    <Col css={FlexCenter} span={6}>
-                        <RiseOutlined style={IconStyle} />
-                        <p>고객과 함께 성장합니다</p>
-                    </Col>
-                    <Col css={FlexCenter} span={6}>
-                        <SyncOutlined style={IconStyle} />
-                        <p>고객의 믿음에 보답합니다</p>
-                    </Col>
-                    <Col css={FlexCenter} span={6}>
-                        <TrophyOutlined style={IconStyle} />
-                        <p>고객과 함께 1등 하겠습니다</p>
-                    </Col>
-                    <Divider />
-                </Row>
-            </Slide>
+            <ContainerDiv>
+                <Slide bottom cascade>
+                    <Title style={{ textAlign: 'center' }} level={2}>
+                        이룸인프라는
+                    </Title>
+                    <Row wrap={true} justify='space-between'>
+                        <Col css={FlexCenter} span={6}>
+                            <QuestionCircleOutlined style={IconStyle} />
+                            <p>고객을 위해 고민합니다</p>
+                        </Col>
+                        <Col css={FlexCenter} span={6}>
+                            <RiseOutlined style={IconStyle} />
+                            <p>고객과 함께 성장합니다</p>
+                        </Col>
+                        <Col css={FlexCenter} span={6}>
+                            <SyncOutlined style={IconStyle} />
+                            <p>고객의 믿음에 보답합니다</p>
+                        </Col>
+                        <Col css={FlexCenter} span={6}>
+                            <TrophyOutlined style={IconStyle} />
+                            <p>고객과 함께 1등 하겠습니다</p>
+                        </Col>
+                        <Divider />
+                    </Row>
+                </Slide>
+            </ContainerDiv>
 
-            <BuisnessArea />
+            <ContainerDiv>
+                <BuisnessArea />
+            </ContainerDiv>
             <Divider />
             <Title level={2}>Business Partner</Title>
             <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
@@ -80,6 +85,11 @@ const Home = () => {
 const IconStyle = {
     fontSize: '50px',
 };
+
+const ContainerDiv = styled.div`
+    margin: auto;
+    max-width: 1140px;
+`;
 
 const CarouselUnit = ({ src, children, title, text }) => {
     const CarouselDiv = styled.div`
