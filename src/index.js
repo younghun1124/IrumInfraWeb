@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
+import GlobalStyle from './styles/GlobalStyle';
 import { BrowserRouter } from 'react-router-dom'; // * BrowserRouter 불러오기
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
+            <GlobalStyle />
             <App />
         </BrowserRouter>
     </React.StrictMode>,
