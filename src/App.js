@@ -1,12 +1,19 @@
 import { Home, Nav, Intro } from './pages';
 import { Routes, Route, Link } from 'react-router-dom';
 import { Layout } from 'antd';
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import Hardware from './pages/Hardware';
+
 const { Header, Content, Footer } = Layout;
 function App() {
     return (
         <>
-            <Layout>
+            <Layout
+                css={css`
+                    background-color: #f9fafb;
+                `}
+            >
                 <Header
                     style={{
                         position: 'fixed',
@@ -18,11 +25,11 @@ function App() {
                     <Nav />
                 </Header>
                 <Content
-                    style={{
-                        background: 'white',
-                        padding: '16px',
-                        marginTop: '64px',
-                    }}
+                    css={css`
+                        background-color: white;
+
+                        margin-top: 64px;
+                    `}
                 >
                     <Routes>
                         <Route path='/' element={<Home />} />
