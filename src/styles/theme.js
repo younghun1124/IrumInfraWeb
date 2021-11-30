@@ -10,6 +10,8 @@ const colors = {
     grey: '#999999',
     green: '#3cb46e',
     blue: '#000080',
+    footerDark: '#191f28',
+    footerGray: '#b0b8c1',
 };
 
 // 자주 사용하는 스타일 속성을 theme으로 만들어보자.

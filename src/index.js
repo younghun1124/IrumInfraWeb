@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 import GlobalStyle from './styles/GlobalStyle';
 import { BrowserRouter } from 'react-router-dom'; // * BrowserRouter 불러오기
+import { ThemeProvider } from '@emotion/react';
+import theme from './styles/theme';
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <GlobalStyle />
-            <App />
+            <ThemeProvider theme={theme}>
+                <GlobalStyle />
+                <App />
+            </ThemeProvider>
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root'),

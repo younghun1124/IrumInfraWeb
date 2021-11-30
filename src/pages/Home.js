@@ -45,7 +45,14 @@ const Home = () => {
                 />
             </Carousel>
 
-            <Row style={{ height: '400px' }} justify='center' align='middle'>
+            <Row
+                css={css`
+                    height: 500px;
+                    background-color: #f9fafb;
+                `}
+                justify='center'
+                align='middle'
+            >
                 <Title level={2}>
                     <Fade cascade right big>
                         고객의 만족을 최우선으로 생각합니다
@@ -53,34 +60,55 @@ const Home = () => {
                 </Title>
             </Row>
 
-            <Divider />
-
-            <InnerContainer>
-                <Slide bottom cascade>
-                    <Title style={{ textAlign: 'center' }} level={2}>
-                        이룸인프라는
-                    </Title>
-                    <Row wrap={true} justify='space-between'>
-                        <Col css={FlexCenter} span={6}>
+            <InnerContainer
+                css={css`
+                    flex-direction: column;
+                    height: 500px;
+                `}
+            >
+                <Title
+                    css={css`
+                        text-align: center;
+                    `}
+                    level={2}
+                >
+                    이룸인프라는
+                </Title>
+                <Row
+                    wrap={true}
+                    css={css`
+                        width: 100%;
+                        margin-top: 100px;
+                    `}
+                    justify='space-between'
+                >
+                    <Slide bottom>
+                        <Col css={FlexCenter}>
                             <QuestionCircleOutlined style={IconStyle} />
                             <p>고객을 위해 고민합니다</p>
                         </Col>
-                        <Col css={FlexCenter} span={6}>
+                    </Slide>
+                    <Slide bottom>
+                        <Col css={FlexCenter}>
                             <RiseOutlined style={IconStyle} />
                             <p>고객과 함께 성장합니다</p>
                         </Col>
-                        <Col css={FlexCenter} span={6}>
+                    </Slide>
+                    <Slide bottom>
+                        <Col css={FlexCenter}>
                             <SyncOutlined style={IconStyle} />
                             <p>고객의 믿음에 보답합니다</p>
                         </Col>
-                        <Col css={FlexCenter} span={6}>
+                    </Slide>
+                    <Slide bottom>
+                        <Col css={FlexCenter}>
                             <TrophyOutlined style={IconStyle} />
                             <p>고객과 함께 1등 하겠습니다</p>
                         </Col>
-                        <Divider />
-                    </Row>
-                </Slide>
+                    </Slide>
+                </Row>
             </InnerContainer>
+            <Divider />
 
             <InnerContainer>
                 <BuisnessArea />
@@ -110,7 +138,7 @@ const CarouselUnit = ({ src, children, title, text }) => {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 540px;
+        height: 700px;
         background-image: url(${src});
         background-position: center;
         background-repeat: no-repeat;
