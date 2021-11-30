@@ -13,6 +13,10 @@ const style = css`
         box-sizing: border-box;
         font-size: 1.6rem;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 `;
 
 const GlobalStyle = () => {
