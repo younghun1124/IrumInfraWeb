@@ -5,19 +5,24 @@ import { Routes, Route } from 'react-router-dom';
 import { Typography, Divider } from 'antd';
 import { NavLink } from 'react-router-dom';
 import BusinessArea from '../components/BusinessArea';
+import { InnerContainer } from '../styles/CustomStyled';
 const { Title, Text, Paragraph } = Typography;
 const Intro = () => {
     return (
         <>
             <MainImg />
             <Divider />
-            <SubNav />
+            <InnerContainer>
+                <SubNav />
+            </InnerContainer>
             <Divider />
-            <Routes>
-                <Route path='welcome' element={<Welcome />} />
-                <Route path='businessArea' element={<BusinessArea />} />
-                <Route path='organization' element={<Organization />} />
-            </Routes>
+            <InnerContainer>
+                <Routes>
+                    <Route path='welcome' element={<Welcome />} />
+                    <Route path='businessArea' element={<BusinessArea />} />
+                    <Route path='organization' element={<Organization />} />
+                </Routes>
+            </InnerContainer>
         </>
     );
 };
@@ -31,9 +36,10 @@ const MainImg = styled.div`
     background-position: center;
 `;
 
-const SubNav = ({ navCurrent }) => {
+const SubNav = () => {
     const SubNavDiv = styled.div`
         display: flex;
+        width: 100%;
         justify-content: space-around;
     `;
     return (
