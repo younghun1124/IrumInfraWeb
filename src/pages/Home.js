@@ -12,30 +12,39 @@ import {
 import { jsx, css } from '@emotion/react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import { InnerContainer } from '../styles/CustomStyled';
 
 const { Title, Paragraph, Text } = Typography;
 const Home = () => {
     return (
         <>
-            <Carousel effect='fade' dots={false} autoplay>
-                {/* <CarouselUnit src='Home/Intro-idc.jpg'></CarouselUnit> */}
-
+            <Carousel
+                effect='fade'
+                dots={false}
+                autoplay
+                css={css`
+                    margin: auto;
+                `}
+            >
                 <CarouselUnit
                     src='Home/Intro-idc.jpg'
                     text='고객과 미래를 함께하는'
                     title='㈜ 이룸인프라'
                 />
+
                 <CarouselUnit
                     src='Home/Intro-idc2.jpg'
                     text='Lenovo Server Storage NetWork'
                     title='ThinkSystem'
                 />
+
                 <CarouselUnit
                     src='Home/Intro-idc3.jpg'
                     text='Lenovo Workstation'
                     title='ThinkStation'
                 />
             </Carousel>
+
             <Row style={{ height: '400px' }} justify='center' align='middle'>
                 <Title level={2}>
                     <Fade cascade right big>
@@ -46,7 +55,7 @@ const Home = () => {
 
             <Divider />
 
-            <ContainerDiv>
+            <InnerContainer>
                 <Slide bottom cascade>
                     <Title style={{ textAlign: 'center' }} level={2}>
                         이룸인프라는
@@ -71,14 +80,16 @@ const Home = () => {
                         <Divider />
                     </Row>
                 </Slide>
-            </ContainerDiv>
+            </InnerContainer>
 
-            <ContainerDiv>
+            <InnerContainer>
                 <BuisnessArea />
-            </ContainerDiv>
+            </InnerContainer>
             <Divider />
-            <Title level={2}>Business Partner</Title>
-            <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
+            <InnerContainer>
+                <Title level={2}>Business Partner</Title>
+                <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
+            </InnerContainer>
         </>
     );
 };
@@ -98,7 +109,7 @@ const CarouselUnit = ({ src, children, title, text }) => {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        width: 100%;
         height: 540px;
         background-image: url(${src});
         background-position: center;
