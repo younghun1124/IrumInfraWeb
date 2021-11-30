@@ -21,6 +21,7 @@ const Intro = () => {
                     <Route path='welcome' element={<Welcome />} />
                     <Route path='businessArea' element={<BusinessArea />} />
                     <Route path='organization' element={<Organization />} />
+                    <Route path='location' element={<Location />} />
                 </Routes>
             </InnerContainer>
         </>
@@ -78,6 +79,7 @@ const Organization = () => {
         </FlexCenterDiv>
     );
 };
+
 const Welcome = () => {
     return (
         <FlexCenterDiv>
@@ -107,11 +109,25 @@ const Welcome = () => {
         </FlexCenterDiv>
     );
 };
+
+const Location = () => {
+    return (
+        <iframe
+            title='map'
+            src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1582.9524392867781!2d126.896063!3d37.486571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x182a672f4f7a36d2!2z7Jqw66a8ZWJpeuyEvO2EsDLssKg!5e0!3m2!1sko!2skr!4v1638255985007!5m2!1sko!2skr'
+            width='100%'
+            height='450'
+            style={{ border: 0, margin: '10px' }}
+            allowfullscreen=''
+            loading='lazy'
+        ></iframe>
+    );
+};
 const FlexCenterDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-    padding: 100px;
+    margin-top: 50px;
     line-height: 50px;
 `;
