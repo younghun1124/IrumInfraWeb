@@ -44,27 +44,50 @@ function App() {
                         background-color: ${theme.colors.footerDark};
                     `}
                 >
-                    <InnerContainer>
-                        <p>
-                            <strong>(주)이룸인프라</strong>
-                            <address>
-                                <a href='tel:02-8577-008'>TEL : 02-8577-008</a>
-                                <br />
-                                FAX : 02-8577-009
-                                <br />
-                                <a href='mailto:mhjung@iruminfra.co.kr'>
-                                    e-Mail : mhjung@iruminfra.co.kr
-                                </a>
-                                <br />
-                                대표 : 정명호 <br />
-                                <a href='https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C%2033%EA%B8%B8%2012%20%EC%9A%B0%EB%A6%BC%20E-Biz%EC%84%BC%ED%84%B0%202%EC%B0%A8%20707%ED%98%B8/address/14126015.89255784,4507147.929730302,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C33%EA%B8%B8%2012,new?c=14125951.9283784,4507137.7306574,18,0,0,0,dh'>
-                                    주소 : 서울시 구로구 디지털로 33길 12 우림
-                                    E-Biz센터 2차 707호
-                                </a>
-                                <br />
-                            </address>
-                        </p>
-                        Copyright © 2020-2021 - all rights reserved - IrumInfra
+                    <InnerContainer
+                        css={css`
+                            justify-content: space-between;
+                        `}
+                    >
+                        <div>
+                            <p>
+                                <strong
+                                    css={css`
+                                        font-size: 1.5rem;
+                                    `}
+                                >
+                                    (주)이룸인프라
+                                </strong>
+                            </p>
+                            <p>
+                                Copyright © 2020-2021 - all rights reserved -
+                                IrumInfra
+                            </p>
+                        </div>
+
+                        <address
+                            css={css`
+                                font-size: 1.3rem;
+                            `}
+                        >
+                            <a href='tel:02-8577-008'>TEL : 02-8577-008</a>
+                            <br />
+                            FAX : 02-8577-009
+                            <br />
+                            <a href='mailto:mhjung@iruminfra.co.kr'>
+                                e-Mail : mhjung@iruminfra.co.kr
+                            </a>
+                            <br />
+                            대표 : 정명호 <br />
+                            <a
+                                target='_blank'
+                                rel='noreferrer'
+                                href='https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C%2033%EA%B8%B8%2012%20%EC%9A%B0%EB%A6%BC%20E-Biz%EC%84%BC%ED%84%B0%202%EC%B0%A8%20707%ED%98%B8/address/14126015.89255784,4507147.929730302,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C33%EA%B8%B8%2012,new?c=14125951.9283784,4507137.7306574,18,0,0,0,dh'
+                            >
+                                주소 : 서울시 구로구 디지털로 33길 12 우림
+                                E-Biz센터 2차 707호
+                            </a>
+                        </address>
                     </InnerContainer>
                 </Footer>
             </Layout>
