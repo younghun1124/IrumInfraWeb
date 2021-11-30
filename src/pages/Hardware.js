@@ -9,38 +9,27 @@ const Hardware = () => {
     return (
         <>
             <Routes>
-                <Route path='server' element={<FrameWrapper />} />
-                <Route path='storage' element={<FrameWrapper />} />
-                <Route path='workstation' element={<FrameWrapper />} />
-                <Route path='pc' element={<FrameWrapper />} />
+                {/* <Route path='server' element={<ServerList />} /> */}
+                {/* <Route path='storage' element={< />} />
+                <Route path='workstation' element={< />} />
+                <Route path='pc' element={< />} /> */}
             </Routes>
         </>
     );
 };
 
 export default Hardware;
+//TODO: json파일을 axios로 요청하는 코드 작성
 
-function FrameWrapper() {
-    const ref = useRef();
-    const [height, setHeight] = useState('0px');
-    const onLoad = () => {
-        setHeight(ref.current.contentWindow.document.body.scrollHeight + 'px');
-    };
-    return (
-        <iframe
-            title='title'
-            ref={ref}
-            onLoad={onLoad}
-            id='myFrame'
-            src='/iframe/hardware/test.htm'
-            width='100%'
-            height={height}
-            scrolling='no'
-            frameBorder='0'
-            style={{
-                width: '100%',
-                overflow: 'auto',
-            }}
-        ></iframe>
-    );
-}
+// const ServerList = () => {
+//     return (
+//         <ol>
+//             {serverJson.models.map((model) => (
+//                 <li>
+//                     <img src={model.imgLink} alt={model.name} />
+//                     <h3>{model.name}</h3>
+//                 </li>
+//             ))}
+//         </ol>
+//     );
+// };
