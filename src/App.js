@@ -10,16 +10,17 @@ function App() {
     return (
         <>
             <Layout
-                css={css`
-                    background-color: #f9fafb;
-                `}
+            // css={css`
+            //     background-color: #f9fafb;
+            // `}
             >
                 <Header
                     style={{
                         position: 'fixed',
                         zIndex: 1,
-                        width: '100%',
+                        width: '100vw',
                         background: 'white',
+                        borderBottom: '1px solid #f0f0f0',
                     }}
                 >
                     <Nav />
