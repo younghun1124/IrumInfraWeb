@@ -46,21 +46,6 @@ const Home = () => {
                 />
             </Carousel>
 
-            <Row
-                css={css`
-                    height: 500px;
-                    background-color: #f9fafb;
-                `}
-                justify='center'
-                align='middle'
-            >
-                <Title level={2}>
-                    <Fade cascade right big>
-                        고객의 만족을 최우선으로 생각합니다
-                    </Fade>
-                </Title>
-            </Row>
-
             <InnerContainer
                 css={css`
                     flex-direction: column;
@@ -85,27 +70,35 @@ const Home = () => {
                     `}
                     justify='space-between'
                 >
-                    <Slide bottom>
+                    <Fade left>
                         <Col css={FlexCenter}>
-                            <QuestionCircleOutlined style={IconStyle} />
+                            <QuestionCircleOutlined
+                                style={{ ...IconStyle, color: 'dimgray' }}
+                            />
                             <P>고객을 위해 고민합니다</P>
                         </Col>
-                    </Slide>
-                    <Slide bottom>
+                    </Fade>
+                    <Fade top>
                         <Col css={FlexCenter}>
-                            <RiseOutlined style={IconStyle} />
+                            <RiseOutlined
+                                style={{ ...IconStyle, color: 'crimson' }}
+                            />
                             <P>고객과 함께 성장합니다</P>
                         </Col>
-                    </Slide>
-                    <Slide bottom>
+                    </Fade>
+                    <Fade bottom>
                         <Col css={FlexCenter}>
-                            <SyncOutlined style={IconStyle} />
+                            <SyncOutlined
+                                style={{ ...IconStyle, color: 'royalblue' }}
+                            />
                             <P>고객의 믿음에 보답합니다</P>
                         </Col>
-                    </Slide>
-                    <Slide bottom>
+                    </Fade>
+                    <Fade right>
                         <Col css={FlexCenter}>
-                            <TrophyOutlined style={IconStyle} />
+                            <TrophyOutlined
+                                style={{ ...IconStyle, color: 'GoldenRod' }}
+                            />
                             <P
                                 css={css`
                                     color: #191f28;
@@ -114,18 +107,49 @@ const Home = () => {
                                 고객과 함께 1등 하겠습니다
                             </P>
                         </Col>
-                    </Slide>
+                    </Fade>
                 </Row>
             </InnerContainer>
-            <Divider />
-
+            <Row
+                css={css`
+                    height: 500px;
+                    background-color: #f9fafb;
+                `}
+                justify='center'
+                align='middle'
+            >
+                <div
+                    css={css`
+                        background-color: beige;
+                    `}
+                >
+                    <Title level={2}>
+                        <Fade cascade right>
+                            고객의 만족을 최우선으로 생각합니다
+                        </Fade>
+                    </Title>
+                </div>
+            </Row>
+            <div>
+                <Divider orientation='center'>
+                    <Title level={3}>Business Area</Title>
+                </Divider>
+                <InnerContainer
+                    css={css`
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                    `}
+                >
+                    <BuisnessArea />
+                </InnerContainer>
+            </div>
+            <Divider orientation='center'>
+                <Title level={3}>Business Partner</Title>
+            </Divider>
             <InnerContainer>
-                <BuisnessArea />
-            </InnerContainer>
-            <Divider />
-            <InnerContainer>
-                <Title level={2}>Business Partner</Title>
-                <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
+                <div>
+                    <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
+                </div>
             </InnerContainer>
         </>
     );
@@ -136,7 +160,7 @@ const IconStyle = {
 
 const P = styled.p`
     color: #191f28;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.8rem;
 `;
 
@@ -174,7 +198,7 @@ const CarouselUnit = ({ src, children, title, text }) => {
                 <Text>{text}</Text>
                 <Title
                     css={css`
-                        font-weight: 700;
+                        font-weight: 600;
                     `}
                 >
                     {title}
@@ -191,5 +215,7 @@ const FlexCenter = css`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    &:hover {
+    }
 `;
 export default Home;
