@@ -12,6 +12,7 @@ import {
 import { jsx, css } from '@emotion/react';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
 import { InnerContainer } from '../styles/CustomStyled';
 
 const { Title, Paragraph, Text } = Typography;
@@ -29,7 +30,7 @@ const Home = () => {
                 <CarouselUnit
                     src='Home/Intro-idc.jpg'
                     text='고객과 미래를 함께하는'
-                    title='㈜ 이룸인프라'
+                    title='(주) 이룸인프라'
                 />
 
                 <CarouselUnit
@@ -66,14 +67,16 @@ const Home = () => {
                     height: 500px;
                 `}
             >
-                <Title
-                    css={css`
-                        text-align: center;
-                    `}
-                    level={2}
-                >
-                    이룸인프라는
-                </Title>
+                <Zoom>
+                    <Title
+                        css={css`
+                            text-align: center;
+                        `}
+                        level={1}
+                    >
+                        이룸인프라는
+                    </Title>
+                </Zoom>
                 <Row
                     wrap={true}
                     css={css`
@@ -85,25 +88,31 @@ const Home = () => {
                     <Slide bottom>
                         <Col css={FlexCenter}>
                             <QuestionCircleOutlined style={IconStyle} />
-                            <p>고객을 위해 고민합니다</p>
+                            <P>고객을 위해 고민합니다</P>
                         </Col>
                     </Slide>
                     <Slide bottom>
                         <Col css={FlexCenter}>
                             <RiseOutlined style={IconStyle} />
-                            <p>고객과 함께 성장합니다</p>
+                            <P>고객과 함께 성장합니다</P>
                         </Col>
                     </Slide>
                     <Slide bottom>
                         <Col css={FlexCenter}>
                             <SyncOutlined style={IconStyle} />
-                            <p>고객의 믿음에 보답합니다</p>
+                            <P>고객의 믿음에 보답합니다</P>
                         </Col>
                     </Slide>
                     <Slide bottom>
                         <Col css={FlexCenter}>
                             <TrophyOutlined style={IconStyle} />
-                            <p>고객과 함께 1등 하겠습니다</p>
+                            <P
+                                css={css`
+                                    color: #191f28;
+                                `}
+                            >
+                                고객과 함께 1등 하겠습니다
+                            </P>
                         </Col>
                     </Slide>
                 </Row>
@@ -124,6 +133,12 @@ const Home = () => {
 const IconStyle = {
     fontSize: '50px',
 };
+
+const P = styled.p`
+    color: #191f28;
+    font-weight: 600;
+    font-size: 1.8rem;
+`;
 
 const ContainerDiv = styled.div`
     margin: auto;
@@ -157,11 +172,18 @@ const CarouselUnit = ({ src, children, title, text }) => {
         <CarouselDiv>
             <div>
                 <Text>{text}</Text>
-                <Title>{title}</Title>
+                <Title
+                    css={css`
+                        font-weight: 700;
+                    `}
+                >
+                    {title}
+                </Title>
             </div>
         </CarouselDiv>
     );
 };
+
 const FlexCenter = css`
     display: flex;
     min-width: 100px;
