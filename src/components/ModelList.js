@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from '@emotion/styled';
 import { Button } from 'antd';
-
 //TODO: json파일을 axios로 요청하는 코드 작성
 const ModelList = ({ jsonFileName }) => {
     const [modelList, setModelList] = useState(null);
@@ -29,6 +28,13 @@ const ModelList = ({ jsonFileName }) => {
                                 href={model.dataSheet}
                             >
                                 DataSheet
+                            </a>
+                            <a
+                                target='_blank'
+                                rel='noreferrer'
+                                href={model.guide}
+                            >
+                                guide
                             </a>
                             <Button>
                                 <a
