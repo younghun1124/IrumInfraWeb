@@ -6,10 +6,10 @@ import { InnerContainer } from '../styles/CustomStyled';
 import { jsx, css } from '@emotion/react';
 const { SubMenu } = Menu;
 const Nav = () => {
-    const [current, setCurret] = useState('0');
-    const handleClick = (e) => {
-        setCurret(e.key);
-    };
+    // const [current, setCurret] = useState('0');
+    // const handleClick = (e) => {
+    //     setCurret(e.key);
+    // };
     return (
         <InnerContainer
             css={css`
@@ -28,8 +28,8 @@ const Nav = () => {
 
             <Menu
                 mode='horizontal'
-                onClick={handleClick}
-                selectedKeys={[current]}
+                // onClick={handleClick}
+                // selectedKeys={[current]}
             >
                 <SubMenu key='company' title='회사소개'>
                     <Menu.Item key='setting:1'>
@@ -59,7 +59,7 @@ const Nav = () => {
                         <Link to='hardware/workstation'>Workstation</Link>
                     </Menu.Item>
                     <Menu.Item key='setting:10'>
-                        <Link to='hardware/pc'>PC</Link>
+                        <Link to='hardware/GPUPlatform'>GPU Platform</Link>
                     </Menu.Item>
                 </SubMenu>
                 <SubMenu key='solution' title='솔루션 사업'>
