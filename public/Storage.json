@@ -1,0 +1,89 @@
+{
+    "models": [
+        {
+            "name": "ThinkSystem DE Series Hybrid Array",
+            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "description": "ThinkSystem DE 시리즈 하이브리드 플래시 어레이.",
+            "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-de-series/ThinkSystem-DE-Series-Hybrid-Flash-Array/p/WMD00000374",
+            "dataSheet": "http://lenovopress.com/datasheet/ds0049-lenovo-thinksystem-de-series-hybrid-array",
+            "guide": "",
+            "spec": [
+                "빅데이터/분석, 영상 감시, 기술 컴퓨팅, 백업 및 복구를 지원하는 뛰어난 성능 ",
+                "로컬 및 원격 모두에서 데이터 손실 및 중단 시간 발생을 방지하는 고급 보호 가드 ",
+                "고도의 안정성 및 “99.9999%” 가용성 제공"
+            ]
+        },
+        {
+            "name": "ThinkSystem DE Series All Falsh Array",
+            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-rack-servers-thinksystem-sr635-series.png?context=bWFzdGVyfHJvb3R8NDk1Njl8aW1hZ2UvcG5nfGg1Yi9oNzMvMTA1MzY5NDE3ODEwMjIucG5nfDA2NDI4YjNiMmEwMjJjNzhmMWVlZWNiNjFlYzI1NGQxNGI0YjEyMGMzZTJhMzYyZWE0ZTg1NTIxM2M4OThhN2U&w=1920",
+            "description": "ThinkSystem DE 시리즈 전체 플래시 어레이",
+            "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-de-series/ThinkSystem-DE-Series-All-Flash-Array/p/WMD00000373",
+            "dataSheet": "http://lenovopress.com/datasheet/ds0051-lenovo-thinksystem-de-series-all-flash-array",
+            "guide": "",
+            "spec": [
+                "최대 1백만 IOPS 및 100마이크로초 미만의 대기 시간의 뛰어난 성능",
+                "손쉬운 통합을 위한 전체 API 및 애플리케이션 플러그인",
+                "단순하고 유연하며 직관적인 관리 및 자동 구성"
+            ]
+        },
+        {
+            "name": "ThinkSystem DM Series Hybrid Array",
+            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "description": "ThinkSystem DM Series Hybrid Flash",
+            "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-dm-series/ThinkSystem-DM-Series-Hybrid-Flash-Array/p/WMD00000376",
+            "dataSheet": "http://lenovopress.com/datasheet/ds0048-lenovo-thinksystem-dm-series-hybrid-array",
+            "guide": "",
+            "spec": [
+                "통합 스토리지",
+                "NVMe를 시스템에 탑재하여 뛰어난 성능 제공",
+                "최대 5:1의 데이터 축소 성능"
+            ]
+        },
+        {
+            "name": "ThinkSystem DM Series All Falsh Array",
+            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "description": "ThinkSystem DM Series All Falsh Array",
+            "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-dm-series/ThinkSystem-DM-Series-All-Flash-Array/p/WMD00000375",
+            "dataSheet": "http://lenovopress.com/datasheet/ds0047-lenovo-dm-series-all-flash-array",
+            "guide": "",
+            "spec": [
+                "성능 저하없이 데이터를 5:1로 감축할 수 있음",
+                "계획적인 가동 중지 상태와 중단을 없앨 수 있음",
+                "단일화된 스토리지를 최대 57PB까지 확장하여 인프라 통합",
+                "하이브리드 클라우드에 맞춰 최적화하고 – 서비스 지 향 IT 아키텍처를 수월하게 실행할 수 있습니다. "
+            ]
+        },
+        {
+            "name": "Lenovo D1224 Direct Attached Storage",
+            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "description": "D1224 Direct Attached Storage",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR530/p/77XX7SRSR53",
+            "dataSheet": "https://en.resources.lenovo.com/data-sheets/lenovo-storage-d1224",
+            "guide": "https://lenovopress.com/LP0512",
+            "spec": [
+                "Supports 24x 2.5-inch HDDs/SSDs per enclosure",
+                "Daisy-chain up to 8 D1224 units per HBA",
+                "Up to 192 drives/384TB max capacity",
+                "Dual expansion I/O module support",
+                "MThree 12Gb SAS ports per module (IN/OUT)",
+                "Support multiple hosts attachment (SAS Zoning)"
+            ]
+        },
+        {
+            "name": "Lenovo D1212 Direct Attached Storage",
+            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "description": "D1212 Direct Attached Storage",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/storage/direct-attached-storage/Lenovo-D1212-DAS/p/77X2CRB1212",
+            "dataSheet": "https://en.resources.lenovo.com/data-sheets/lenovo-storage-d1212",
+            "guide": "https://lenovopress.com/LP0512",
+            "spec": [
+                "Supports 12x 3.5-inch HDDs/SSDs per enclosure",
+                "Daisy-chain up to 8 D1212 units per SAS Chain",
+                "Up to 96 drives/960TB* max capacity",
+                "Dual expansion I/O module support standard",
+                "Three 12Gb SAS ports per module (IN/OUT)",
+                "Support multiple hosts attachment (SAS Zoning)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "models": [
+        {
+            "name": "P350 Tiny",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p350_tiny.webp",
+            "description": "ThinkStation P350 Tiny workstation",
+            "moreInfoLink": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P350.pdf",
+            "dataSheet": "http://lenovopress.com/datasheet/ds0049-lenovo-thinksystem-de-series-hybrid-array",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P350_Tiny",
+            "spec": [
+                "Intel®vPro®플랫폼 기반의 컴팩트한 시스템",
+                "원하는 NVIDIA®프로페셔널 그래픽 선택",
+                "강력한 구성 옵션"
+            ]
+        },
+        {
+            "name": "P350 SFF",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p350_SFF.webp",
+            "description": "ThinkStation P350 SFF 워크스테이션",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P350-SFF/p/LEN102S0003",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P350.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P350_SFF",
+            "spec": [
+                "강력하면서도 컴팩트한 소형 폼 팩터 워크스테이션",
+                "NVIDIA®프로페셔널 그래픽 옵션",
+                "워크플로에 맞게 사용자 지정 가능한 구성"
+            ]
+        },
+        {
+            "name": "P350 Tower",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p350_tower.webp",
+            "description": "ThinkStation P350 타워형 워크스테션",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P350-Tower/p/LEN102S0002",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P350.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P350_Tower",
+            "spec": [
+                "고성능 엔트리 레벨 타워",
+                "NVIDIA®프로페셔널 그래픽 지원 및 VR 지원 옵션",
+                "사용자의 워크플로우를 위한 커스텀 가능한 구성"
+            ]
+        },
+        {
+            "name": "P520c",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p520c.webp",
+            "description": "ThinkStation P520c",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P520c/p/33TS3TP520C",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P520c.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P520c",
+            "spec": [
+                "컴팩트한 고성능 25 L 타워",
+                "VR-레디, ISV-인증, 에너지 효율",
+                "세부적인 구성 변경 기능, 신뢰성, 합리적인 가격대"
+            ]
+        },
+        {
+            "name": "P520",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p520.webp",
+            "description": "D1224 Direct Attached Storage",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P520/p/33TS3TPP520",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P520.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P520",
+            "spec": [
+                "강력한 프로세싱, 전문가 수준의 그래픽",
+                "초고속 메모리, 저장장치 I/O 기술",
+                "가상 현실 ISV-인증 워크스테이션"
+            ]
+        },
+        {
+            "name": "P620 Tower",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p620.webp",
+            "description": "ThinkStation P620 Tower",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P620/p/33TS3TPP620",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStationP_620.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P620",
+            "spec": [
+                "AMD Ryzen™ Threadripper™ PRO 탑재",
+                "최대 64 코어, 4.0GHz, & 20TB 저장장치",
+                "최대 2 NVIDIA®Quadro®그래픽 카드"
+            ]
+        },
+        {
+            "name": "P720 Tower",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p720.webp",
+            "description": "ThinkStation P720 Tower",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P720/p/33TS3TPP720",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P720.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P720",
+            "spec": [
+                "뛰어난 기능의 듀얼 프로세서 워크스테이션",
+                "탁월한 유연성 확고한 신뢰성",
+                "성능 요구치가 높은 워크플로우에 이상적"
+            ]
+        },
+        {
+            "name": "P920 Tower",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/p920.webp",
+            "description": "ThinkStation P620 Tower",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/workstations/thinkstation-p-series/ThinkStation-P920/p/33TS3TPP920",
+            "dataSheet": "http://www.iruminfra.co.kr/irum/WS/datasheet/ThinkStation_P920.pdf",
+            "guide": "https://psref.lenovo.com/Product/ThinkStation/ThinkStation_P920",
+            "spec": [
+                "최상위 듀얼 프로세서 워크스테이션",
+                "획기적인 GPU 성능",
+                "최고 성능의 워크플로우에 이상적"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "models": [
+        {
+            "name": "M 시리즈 TOWER",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/m-series.webp",
+            "description": "기업고객을 염두에 두고 설계된 M 시리즈 타워형",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/desktops/thinkcentre/m-series-towers/c/m-series-towers",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [
+                "엔터프라이즈 데스크탑",
+                "강력하고 안전한 타워형 데스크탑",
+                "일상에 최적화된 편안한 디자인"
+            ]
+        },
+        {
+            "name": "M 시리즈 SFF",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/sff-think-m-serie",
+            "description": "컴팩트 하지만 우수한 성능의 엔터프라이즈 데스크탑",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/desktops/thinkcentre/m-series-sff/c/m-series-sff",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [
+                "컴팩트한 엔터프라이즈 데스크탑",
+                "생산적이며, 신뢰할 수 있는 M시리즈",
+                "스몰 폼팩터 솔루션은 모든 IT팀을 위한 최적의 솔루션",
+                "업계를 선도하는 비즈니스 머신",
+                "어떠한 기업에서도 완벽한 솔루션으로, 관리가 편하며 컴팩트 "
+            ]
+        },
+        {
+            "name": "M 시리즈 TINY",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/tiny-think-m.webp",
+            "description": "작지만 강한 초소형 데스크탑",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/desktops/thinkcentre/m-series-tiny/c/m-series-tiny",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [
+                "완벽한 기능의 마이크로 데스크탑",
+                "M 시리즈 초소형 데스크탑은 에너지 효율성",
+                "공간 절약형의 디자인",
+                "엔터프라이즈급 성능과 15개월의 플랫폼 안정성"
+            ]
+        }
+    ]
+}

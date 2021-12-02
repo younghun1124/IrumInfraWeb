@@ -1,0 +1,49 @@
+{
+    "models": [
+        {
+            "name": "ThinkPad X1 시리즈",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/X1-Carbon.webp",
+            "description": "초경량 고성능 노트북의 울트라 프리미엄 라인",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-x1/c/thinkpad-x1-series",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [""]
+        },
+        {
+            "name": "THINKPAD X 시리즈",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/X13-Gen-2.webp",
+            "description": "최소한의 공간 차지, 넉넉한 배터리 수명, 프리미엄 설계",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-x-series/c/thinkpad-x-series",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [""]
+        },
+        {
+            "name": "THINKPAD T 시리즈",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/T14-Gen2-Intel.webp",
+            "description": "탁월한 내구성과 방대한 배터리, 최고 옵션의 대표적인 비즈니스 시리즈",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-t-series/c/thinkpad-t-series",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [""]
+        },
+        {
+            "name": "THINKPAD P 시리즈",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P14s-Gen2.webp",
+            "description": "가장 강력한 고성능 및 ISV 인증의 모바일 워크스테이션",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/c/thinkpad-p-series",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [""]
+        },
+        {
+            "name": "ThinkPad Yoga",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/X1-Yoga-Gen6.webp",
+            "description": "4가지 다른 모드로 사용할 수 있는 고성능 컨버터블 비즈니스 울트라북",
+            "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-yoga/c/thinkpadyoga",
+            "dataSheet": "",
+            "guide": "",
+            "spec": [""]
+        }
+    ]
+}
