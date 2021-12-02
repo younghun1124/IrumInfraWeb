@@ -45,40 +45,54 @@ const Nav = () => {
                         <Link to='introduction/partners'>주요협력사</Link>
                     </Menu.Item>
                     <Menu.Item key='setting:6'>
-                        <Link to='introduction/location'>찾아오시는 길</Link>
+                        <Link to='introduction/location'>Contact</Link>
                     </Menu.Item>
                 </SubMenu>
-                <SubMenu key='business' title='H/W 사업'>
+                <SubMenu key='server&storage' title='서버&스토리지'>
                     <Menu.Item key='setting:7'>
-                        <Link to='hardware/server'>Server</Link>
+                        <Link to='server&storage/server'>서버</Link>
                     </Menu.Item>
                     <Menu.Item key='setting:8'>
-                        <Link to='hardware/storage'>Storage</Link>
-                    </Menu.Item>
-                    <Menu.Item key='setting:9'>
-                        <Link to='hardware/workstation'>Workstation</Link>
-                    </Menu.Item>
-                    <Menu.Item key='setting:10'>
-                        <Link to='hardware/GPUPlatform'>GPU Platform</Link>
+                        <Link to='server&storage/storage'>스토리지</Link>
                     </Menu.Item>
                 </SubMenu>
-                <SubMenu key='solution' title='솔루션 사업'>
+                <SubMenu key='workstation' title='워크스테이션'>
+                    <Menu.Item key='setting:9'>
+                        <Link to='workstation/towerWorkstation'>
+                            Tower Workstation
+                        </Link>
+                    </Menu.Item>
+                    <Menu.Item key='setting:10'>
+                        <Link to='workstation/mobileWorkStation'>
+                            Mobile WorkStation
+                        </Link>
+                    </Menu.Item>
+                </SubMenu>
+                <SubMenu key='PC&laptop' title='PC&노트북'>
                     <Menu.Item key='setting:11'>
-                        <Link to='solution/Nutanix'>Nutanix</Link>
+                        <Link to='pc&laptop/thinkCentre'>Think Centre</Link>
                     </Menu.Item>
                     <Menu.Item key='setting:12'>
+                        <Link to='pc&laptop/>thinkPad'>ThinkPad</Link>
+                    </Menu.Item>
+                </SubMenu>
+                <SubMenu key='solution' title='솔루션'>
+                    <Menu.Item key='setting:13'>
+                        <Link to='solution/Nutanix'>Nutanix</Link>
+                    </Menu.Item>
+                    <Menu.Item key='setting:14'>
                         <Link to='solution/Vmware'>Vmware</Link>
                     </Menu.Item>
                 </SubMenu>
 
-                <SubMenu key='service' title='서비스 사업'>
+                {/* <SubMenu key='service' title='서비스 사업'>
                     <Menu.Item key='setting:13'>
                         <Link to='service/maintenance'>IT유지보수</Link>
                     </Menu.Item>
                     <Menu.Item key='setting:14'>
                         <Link to='service/transfer'>IT장비이전</Link>
                     </Menu.Item>
-                </SubMenu>
+                </SubMenu> */}
             </Menu>
         </InnerContainer>
     );

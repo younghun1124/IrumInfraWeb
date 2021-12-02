@@ -1,10 +1,11 @@
-import { Home, Nav, Intro } from './pages';
+import { Home, Nav, Intro, Hardware, WorkStation } from './pages';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import Hardware from './pages/Hardware';
+
 import { InnerContainer } from './styles/CustomStyled';
+
 const { Header, Content, Footer } = Layout;
 function App() {
     return (
@@ -35,7 +36,14 @@ function App() {
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='/introduction/*' element={<Intro />} />
-                        <Route path='/hardware/*' element={<Hardware />} />
+                        <Route
+                            path='/server&storage/*'
+                            element={<Hardware />}
+                        />
+                        <Route
+                            path='/workstation/*'
+                            element={<WorkStation />}
+                        />
                     </Routes>
                 </Content>
                 <Footer
@@ -85,7 +93,7 @@ function App() {
                                 href='https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C%2033%EA%B8%B8%2012%20%EC%9A%B0%EB%A6%BC%20E-Biz%EC%84%BC%ED%84%B0%202%EC%B0%A8%20707%ED%98%B8/address/14126015.89255784,4507147.929730302,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C33%EA%B8%B8%2012,new?c=14125951.9283784,4507137.7306574,18,0,0,0,dh'
                             >
                                 주소 : 서울시 구로구 디지털로 33길 12 우림
-                                E-Biz센터 2차 707호
+                                E-Biz센터 2차 612호
                             </a>
                         </address>
                     </InnerContainer>

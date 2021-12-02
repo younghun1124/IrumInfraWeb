@@ -12,14 +12,17 @@ const Hardware = () => {
                 <div style={{ width: '100%' }}>
                     <Routes>
                         <Route
-                            path='server'
+                            path='/server'
                             element={
                                 <ModelList jsonFileName={'serverList.json'} />
                             }
                         />
-                        {/* <Route path='storage' element={< />} />
-                        <Route path='workstation' element={< />} />
-                        <Route path='pc' element={< />} /> */}
+                        <Route
+                            path='/storage'
+                            element={
+                                <ModelList jsonFileName={'Storage.json'} />
+                            }
+                        />
                     </Routes>
                 </div>
             </InnerContainer>

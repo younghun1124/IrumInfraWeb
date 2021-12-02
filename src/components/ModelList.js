@@ -12,7 +12,7 @@ const ModelList = ({ jsonFileName }) => {
             setModelList(result.data);
         }
         getModelJson();
-    }, []);
+    }, [jsonFileName]);
     return (
         modelList && (
             <StyledUl>
@@ -22,29 +22,37 @@ const ModelList = ({ jsonFileName }) => {
                             <ModelImg src={model.imgLink} alt={model.name} />
                             <h3>{model.name}</h3>
                             <p>{model.description}</p>
-                            <a
-                                target='_blank'
-                                rel='noreferrer'
-                                href={model.dataSheet}
-                            >
-                                DataSheet
-                            </a>
-                            <a
-                                target='_blank'
-                                rel='noreferrer'
-                                href={model.guide}
-                            >
-                                guide
-                            </a>
-                            <Button>
+                            {model.dataSheet && (
                                 <a
                                     target='_blank'
                                     rel='noreferrer'
-                                    href={model.moreInfoLink}
+                                    href={model.dataSheet}
                                 >
-                                    자세한 정보
+                                    DataSheet
                                 </a>
-                            </Button>
+                            )}
+
+                            {model.guide && (
+                                <a
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    href={model.guide}
+                                >
+                                    guide
+                                </a>
+                            )}
+                            <br />
+                            {model.moreInfoLink && (
+                                <Button>
+                                    <a
+                                        target='_blank'
+                                        rel='noreferrer'
+                                        href={model.moreInfoLink}
+                                    >
+                                        자세한 정보
+                                    </a>
+                                </Button>
+                            )}
                             <ul>
                                 {model.spec.map((element) => (
                                     <li>{element}</li>
