@@ -2,7 +2,7 @@
     "models": [
         {
             "name": "M 시리즈 TOWER",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/m-series.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS//Img/m-series.webp",
             "description": "기업고객을 염두에 두고 설계된 M 시리즈 타워형",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/desktops/thinkcentre/m-series-towers/c/m-series-towers",
             "dataSheet": "",
@@ -15,7 +15,7 @@
         },
         {
             "name": "M 시리즈 SFF",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/sff-think-m-serie",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/sff-think-m-series.webp",
             "description": "컴팩트 하지만 우수한 성능의 엔터프라이즈 데스크탑",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/desktops/thinkcentre/m-series-sff/c/m-series-sff",
             "dataSheet": "",
@@ -30,7 +30,7 @@
         },
         {
             "name": "M 시리즈 TINY",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/tiny-think-m.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/tiny-think-m.webp",
             "description": "작지만 강한 초소형 데스크탑",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/desktops/thinkcentre/m-series-tiny/c/m-series-tiny",
             "dataSheet": "",

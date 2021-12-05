@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel, Typography, Divider, Row, Col, Space, Card } from 'antd';
 import BuisnessArea from '../components/BusinessArea';
+import Partners from '../components/Partners';
 import styled from '@emotion/styled';
 import {
     QuestionCircleOutlined,
@@ -45,11 +46,24 @@ const Home = () => {
                     title='ThinkStation'
                 />
             </Carousel>
-
+            <Row
+                css={css`
+                    min-height: 200px;
+                    background-color: #f9fafb;
+                `}
+                justify='center'
+                align='middle'
+            >
+                <Title level={2}>
+                    <Fade cascade right>
+                        고객의 만족을 최우선으로 생각합니다
+                    </Fade>
+                </Title>
+            </Row>
             <InnerContainer
                 css={css`
                     flex-direction: column;
-                    height: 500px;
+                    min-height: 400px;
                 `}
             >
                 <Zoom>
@@ -75,7 +89,7 @@ const Home = () => {
                             <QuestionCircleOutlined
                                 style={{ ...IconStyle, color: 'dimgray' }}
                             />
-                            <P>고객을 위해 고민합니다</P>
+                            <Span>고객을 위해 고민합니다</Span>
                         </Col>
                     </Fade>
                     <Fade top>
@@ -83,7 +97,7 @@ const Home = () => {
                             <RiseOutlined
                                 style={{ ...IconStyle, color: 'crimson' }}
                             />
-                            <P>고객과 함께 성장합니다</P>
+                            <Span>고객과 함께 성장합니다</Span>
                         </Col>
                     </Fade>
                     <Fade bottom>
@@ -91,7 +105,7 @@ const Home = () => {
                             <SyncOutlined
                                 style={{ ...IconStyle, color: 'royalblue' }}
                             />
-                            <P>고객의 믿음에 보답합니다</P>
+                            <Span>고객의 믿음에 보답합니다</Span>
                         </Col>
                     </Fade>
                     <Fade right>
@@ -99,37 +113,18 @@ const Home = () => {
                             <TrophyOutlined
                                 style={{ ...IconStyle, color: 'GoldenRod' }}
                             />
-                            <P
+                            <Span
                                 css={css`
                                     color: #191f28;
                                 `}
                             >
                                 고객과 함께 1등 하겠습니다
-                            </P>
+                            </Span>
                         </Col>
                     </Fade>
                 </Row>
             </InnerContainer>
-            <Row
-                css={css`
-                    height: 500px;
-                    background-color: #f9fafb;
-                `}
-                justify='center'
-                align='middle'
-            >
-                <div
-                    css={css`
-                        background-color: beige;
-                    `}
-                >
-                    <Title level={2}>
-                        <Fade cascade right>
-                            고객의 만족을 최우선으로 생각합니다
-                        </Fade>
-                    </Title>
-                </div>
-            </Row>
+
             <div>
                 <Divider orientation='center'>
                     <Title level={3}>Business Area</Title>
@@ -149,6 +144,7 @@ const Home = () => {
             <InnerContainer>
                 <div>
                     <Paragraph>파트너들과 최선을 다하고 있습니다.</Paragraph>
+                    <Partners />
                 </div>
             </InnerContainer>
         </>
@@ -158,15 +154,10 @@ const IconStyle = {
     fontSize: '50px',
 };
 
-const P = styled.p`
+const Span = styled.span`
     color: #191f28;
-    font-weight: 500;
-    font-size: 1.8rem;
-`;
 
-const ContainerDiv = styled.div`
-    margin: auto;
-    max-width: 1140px;
+    font-size: 1.8rem;
 `;
 
 const CarouselUnit = ({ src, children, title, text }) => {
@@ -182,15 +173,19 @@ const CarouselUnit = ({ src, children, title, text }) => {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        font-size: 6rem;
+        ${({ theme }) => theme.device.mobile} {
+            font-size: 4rem;
+        }
     `;
 
     const Text = styled.div`
         margin: 10px;
-        font-size: 20px;
+        font-size: 0.4em;
     `;
     const Title = styled.div`
         margin: 10px;
-        font-size: 70px;
+        font-size: 1em;
     `;
     return (
         <CarouselDiv>
@@ -215,7 +210,6 @@ const FlexCenter = css`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    &:hover {
-    }
+    padding: 2rem;
 `;
 export default Home;

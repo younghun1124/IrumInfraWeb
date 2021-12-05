@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Typography, Divider } from 'antd';
 import { NavLink } from 'react-router-dom';
 import BusinessArea from '../components/BusinessArea';
+import Partners from '../components/Partners';
 import { InnerContainer } from '../styles/CustomStyled';
 const { Title, Text, Paragraph } = Typography;
 const Intro = () => {
@@ -21,6 +22,7 @@ const Intro = () => {
                     <Route path='welcome' element={<Welcome />} />
                     <Route path='businessArea' element={<BusinessArea />} />
                     <Route path='organization' element={<Organization />} />
+                    <Route path='partners' element={<Partners />} />
                     <Route path='location' element={<Location />} />
                 </Routes>
             </InnerContainer>
@@ -30,7 +32,7 @@ const Intro = () => {
 export default Intro;
 
 const MainImg = styled.div`
-    background-image: url(/Intro/building2.png);
+    background-image: url(/Intro/serverRoom.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;

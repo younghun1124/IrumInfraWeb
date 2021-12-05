@@ -9,20 +9,16 @@ const WorkStation = () => {
     return (
         <>
             <InnerContainer>
-                <div style={{ width: '100%' }}>
+                <div style={{ width: '100%', padding: '2rem' }}>
                     <Routes>
                         <Route
-                            path='towerWorkstation'
-                            element={
-                                <ModelList jsonFileName={'WorkStation.json'} />
-                            }
+                            path='thinkCentre'
+                            element={<ModelList jsonFileName={'PC.json'} />}
                         />
                         <Route
-                            path='mobileWorkStation'
+                            path='thinkPad'
                             element={
-                                <ModelList
-                                    jsonFileName={'Mobile_Workstation.json'}
-                                />
+                                <ModelList jsonFileName={'Notebook.json'} />
                             }
                         />
                     </Routes>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from '@emotion/styled';
 import { Button } from 'antd';
+import { BarChartOutlined, FileTextOutlined } from '@ant-design/icons';
 //TODO: json파일을 axios로 요청하는 코드 작성
 const ModelList = ({ jsonFileName }) => {
     const [modelList, setModelList] = useState(null);
@@ -17,49 +18,56 @@ const ModelList = ({ jsonFileName }) => {
         modelList && (
             <StyledUl>
                 {modelList.models.map((model) => (
-                    <li>
+                    <StyledLi>
                         <ModelCard>
                             <ModelImg src={model.imgLink} alt={model.name} />
-                            <h3>{model.name}</h3>
-                            <p>{model.description}</p>
-                            {model.dataSheet && (
-                                <a
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    href={model.dataSheet}
-                                >
-                                    DataSheet
-                                </a>
-                            )}
-
-                            {model.guide && (
-                                <a
-                                    target='_blank'
-                                    rel='noreferrer'
-                                    href={model.guide}
-                                >
-                                    guide
-                                </a>
-                            )}
+                            <h2 style={{ textAlign: 'center' }}>
+                                {model.name}
+                            </h2>
+                            <LinkDiv>
+                                {model.dataSheet && (
+                                    <A
+                                        target='_blank'
+                                        rel='noreferrer'
+                                        href={model.dataSheet}
+                                    >
+                                        <BarChartOutlined />
+                                        DataSheet
+                                    </A>
+                                )}
+                                {model.guide && (
+                                    <A
+                                        target='_blank'
+                                        rel='noreferrer'
+                                        href={model.guide}
+                                    >
+                                        <FileTextOutlined />
+                                        guide
+                                    </A>
+                                )}
+                            </LinkDiv>
                             <br />
+
+                            <p>{model.description}</p>
+
+                            <ul style={{ listStyleType: 'disc' }}>
+                                {model.spec.map((element) => (
+                                    <li>{element}</li>
+                                ))}
+                            </ul>
                             {model.moreInfoLink && (
                                 <Button>
-                                    <a
+                                    <A
                                         target='_blank'
                                         rel='noreferrer'
                                         href={model.moreInfoLink}
                                     >
                                         자세한 정보
-                                    </a>
+                                    </A>
                                 </Button>
                             )}
-                            <ul>
-                                {model.spec.map((element) => (
-                                    <li>{element}</li>
-                                ))}
-                            </ul>
                         </ModelCard>
-                    </li>
+                    </StyledLi>
                 ))}
             </StyledUl>
         )
@@ -67,13 +75,30 @@ const ModelList = ({ jsonFileName }) => {
 };
 export default ModelList;
 
+const A = styled.a`
+    color: #e31d1a;
+`;
+
+const LinkDiv = styled.div`
+    display: flex;
+    justify-content: space-around;
+`;
+
+const StyledLi = styled.li`
+    border-radius: 1rem;
+    background-color: ${({ theme }) => theme.colors.cardGray};
+`;
+
 const StyledUl = styled.ul`
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30rem, auto));
-    gap: 3rem 10rem;
+
+    gap: 1rem;
 `;
 const ModelImg = styled.img`
     width: 100%;
 `;
-const ModelCard = styled.div``;
+const ModelCard = styled.div`
+    padding: 10%;
+`;

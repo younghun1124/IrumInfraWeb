@@ -7,7 +7,7 @@
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-x1/c/thinkpad-x1-series",
             "dataSheet": "",
             "guide": "",
-            "spec": [""]
+            "spec": []
         },
         {
             "name": "THINKPAD X 시리즈",
@@ -16,7 +16,7 @@
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-x-series/c/thinkpad-x-series",
             "dataSheet": "",
             "guide": "",
-            "spec": [""]
+            "spec": []
         },
         {
             "name": "THINKPAD T 시리즈",
@@ -25,7 +25,7 @@
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-t-series/c/thinkpad-t-series",
             "dataSheet": "",
             "guide": "",
-            "spec": [""]
+            "spec": []
         },
         {
             "name": "THINKPAD P 시리즈",
@@ -34,7 +34,7 @@
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/c/thinkpad-p-series",
             "dataSheet": "",
             "guide": "",
-            "spec": [""]
+            "spec": []
         },
         {
             "name": "ThinkPad Yoga",
@@ -43,7 +43,7 @@
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-yoga/c/thinkpadyoga",
             "dataSheet": "",
             "guide": "",
-            "spec": [""]
+            "spec": []
         }
     ]
 }

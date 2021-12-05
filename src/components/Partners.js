@@ -1,40 +1,98 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import Fade from 'react-reveal/Fade';
+import styled from '@emotion/styled';
+
+import Zoom from 'react-reveal/Zoom';
 const Partners = () => {
     return (
-        <Row wrap={true} gutter={16} justify='space-between'>
-            <Fade bottom cascade>
-                <Col css={FlexCenter} span={8}>
-                    <Title level={4}>하드웨어 사업</Title>
-                    <StyledImg src='/hw.jpg' alt='하드웨어 사업' />
-                    <Paragraph>
-                        강력한 성능의 Rack & Tower Server 관리가 용이하고 확장이
-                        간편한 Storage 압도적 성능과 내구성의 Workstation
-                    </Paragraph>
-                </Col>
-            </Fade>
-            <Fade bottom cascade>
-                <Col css={FlexCenter} span={8}>
-                    <Title level={4}>솔루션 사업</Title>
-                    <StyledImg src='/sol2.png' alt='하드웨어 사업' />
-                    <Paragraph>
-                        강력한 성능의 모바일 워크스테이션 ThinkPad 압도적인
-                        성능과 내구성을 지닌 ThinkStation
-                    </Paragraph>
-                </Col>
-            </Fade>
-            <Fade bottom cascade>
-                <Col css={FlexCenter} span={8}>
-                    <Title level={4}>Contact us</Title>
-                    <StyledImg src='/call center.png' alt='하드웨어 사업' />
-                    <Paragraph>
-                        TEL. 02-8577-008 FAX. 02-8577-009 E-mail.
-                        mhjung@iruminfra.co.kr
-                    </Paragraph>
-                </Col>
-            </Fade>
-        </Row>
+        <Zoom cascade>
+            <GridDiv>
+                <Partner
+                    imgLink='/Intro/Partners/Lenovo_logo_red.png'
+                    hyperLink='https://www.lenovo.com/kr/ko/'
+                >
+                    Lenovo
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/HPE-logo-exence.png'
+                    hyperLink='http://www.hpe.com/'
+                >
+                    HP Enterprise
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/dell-logo.png'
+                    hyperLink='http://www.dell.com/'
+                >
+                    Dell
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/LGe.jpg'
+                    hyperLink='http://www.lge.co.kr/'
+                >
+                    LG 전자
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/MS.png'
+                    hyperLink='http://www.microsoft.com//'
+                >
+                    Microsoft
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/nutanix.png'
+                    hyperLink='https://www.nutanix.com/kr'
+                >
+                    Nutanix
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/vmware.png'
+                    hyperLink='http://www.vmware.com/'
+                >
+                    vmware
+                </Partner>
+                <Partner
+                    imgLink='/Intro/Partners/Tidalscale.png'
+                    hyperLink='http://www.tidalscale.com/'
+                >
+                    Tidalscale
+                </Partner>
+            </GridDiv>
+        </Zoom>
+    );
+};
+
+const Partner = ({ imgLink, hyperLink, children }) => {
+    return (
+        <GridItem>
+            <h2>{children}</h2>
+            <LogoImg alt={children} src={imgLink} />
+            <a target='_blank' rel='noreferrer' href={hyperLink}>
+                Read more {'>'}
+            </a>
+        </GridItem>
     );
 };
 export default Partners;
+
+const LogoImg = styled.img`
+    width: 100%;
+`;
+
+const GridDiv = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+
+    ${({ theme }) => theme.device.tablet} {
+        grid-template-columns: repeat(auto-fill, minmax(50%, auto));
+    }
+    ${({ theme }) => theme.device.mobile} {
+        grid-template-columns: repeat(auto-fill, minmax(100%, auto));
+    }
+`;
+
+const GridItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+`;

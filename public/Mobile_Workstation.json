@@ -2,7 +2,7 @@
     "models": [
         {
             "name": "ThinkPad P15v Gen 2",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P15vG2.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P15vG2.webp",
             "description": "강력하고 합리적인 모바일 워크스테이션",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P15v-Gen-2-15-inch-Intel/p/LEN101T0001",
             "dataSheet": "",
@@ -15,7 +15,7 @@
         },
         {
             "name": "ThinkPad P17 Gen 2 (Intel)",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P17Gen2.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P17Gen2.webp",
             "description": "파워 유저를 위한 17형 대화면의 강력한 노트북",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P17-Gen-2-17-inch-Intel-mobile-workstation/p/WMD00000480",
             "dataSheet": "",
@@ -28,7 +28,7 @@
         },
         {
             "name": "P15 Gen 2",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P15Gen2.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P15Gen2.webp",
             "description": "지금까지 없던 구성의 유연성",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P15-Gen-2-15-inch-Intel/p/WMD00000487",
             "dataSheet": "",
@@ -41,7 +41,7 @@
         },
         {
             "name": "ThinkPad P1 Gen 4",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P1Gen4.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P1Gen4.webp",
             "description": "4세대로 접어든 강력한 성능 뛰어난 이동성, 놀라운 시각적 경험을 제공하는 전설적인 ThinkPad ®P1",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P1-Gen-4/p/WMD00000463",
             "dataSheet": "",
@@ -54,7 +54,7 @@
         },
         {
             "name": "ThinkPad P14s Gen 2 (AMD)",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P14sGen2AMD.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P14sGen2AMD.webp",
             "description": "레노버 AMD 워크스테이션 중 가장 가벼운 노트북",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/P14s-AMD-G2/p/22WSP144SA2",
             "dataSheet": "",
@@ -67,7 +67,7 @@
         },
         {
             "name": "ThinkPad P14s Gen 2 (Intel)",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P14sGen2Intel.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P14sGen2Intel.webp",
             "description": "ThinkPad P14s 2세대 (14형 Intel)은 레노버의 모바일 워크스테이션",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P14s-Gen-2-14%E2%80%9D-Intel/p/22WSP14P4S2",
             "dataSheet": "",
@@ -80,7 +80,7 @@
         },
         {
             "name": "ThinkPad P15s Gen 2 (Intel)",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P15sGen2intel.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P15sGen2intel.webp",
             "description": "ThinkPad P15s 2세대 (15형 Intel) 모바일 워크스테이션",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P15s-Gen-2-15%E2%80%9D-Intel/p/22WSP15P5S2",
             "dataSheet": "",
@@ -93,7 +93,7 @@
         },
         {
             "name": "ThinkPad P1 Gen 3",
-            "imgLink": "http://www.iruminfra.co.kr/irum/WS/img/P1-Gen3.webp",
+            "imgLink": "http://www.iruminfra.co.kr/irum/WS/Img/P1-Gen3.webp",
             "description": "멋진 디자인과 강력한 기능의 ThinkPad P1 3 세대",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/laptops/thinkpad/thinkpad-p-series/ThinkPad-P1-Gen-3/p/22WS2P1P1N3",
             "dataSheet": "",

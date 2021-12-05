@@ -1,6 +1,6 @@
-import { Home, Nav, Intro, Hardware, WorkStation } from './pages';
+import { Home, Nav, Intro, Hardware, WorkStation, PCAndLaptop } from './pages';
 import { Routes, Route } from 'react-router-dom';
-import { Layout } from 'antd';
+import { Layout, BackTop } from 'antd';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
@@ -10,6 +10,7 @@ const { Header, Content, Footer } = Layout;
 function App() {
     return (
         <>
+            <BackTop />
             <Layout
             // css={css`
             //     background-color: #f9fafb;
@@ -44,6 +45,7 @@ function App() {
                             path='/workstation/*'
                             element={<WorkStation />}
                         />
+                        <Route path='/pc&laptop/*' element={<PCAndLaptop />} />
                     </Routes>
                 </Content>
                 <Footer
