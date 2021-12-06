@@ -12,13 +12,13 @@ const WorkStation = () => {
                 <div style={{ width: '100%', padding: '2rem' }}>
                     <Routes>
                         <Route
-                            path='towerWorkstation'
+                            path='tower'
                             element={
-                                <ModelList jsonFileName={'WorkStation.json'} />
+                                <ModelList jsonFileName={'Workstation.json'} />
                             }
                         />
                         <Route
-                            path='mobileWorkStation'
+                            path='mobile'
                             element={
                                 <ModelList
                                     jsonFileName={'Mobile_Workstation.json'}

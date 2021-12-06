@@ -2,7 +2,7 @@
     "models": [
         {
             "name": "ThinkSystem SR250 Rack Server",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr250.webp",
             "description": "엔트리 클라우드, 가상화 및 데이터 분석을 포함한 워크로드에 엔터프라이즈 급 성능, 안정성 및 유연성을 제공하는 컴팩트 한 1U 폼 팩터의 단일 프로세서 랙 서버입니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR250/p/77XX7SRSR25",
             "dataSheet": "https://lenovopress.com/DS0066",
@@ -18,7 +18,7 @@
         },
         {
             "name": "ThinkSystem SR635",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-rack-servers-thinksystem-sr635-series.png?context=bWFzdGVyfHJvb3R8NDk1Njl8aW1hZ2UvcG5nfGg1Yi9oNzMvMTA1MzY5NDE3ODEwMjIucG5nfDA2NDI4YjNiMmEwMjJjNzhmMWVlZWNiNjFlYzI1NGQxNGI0YjEyMGMzZTJhMzYyZWE0ZTg1NTIxM2M4OThhN2U&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr635.webp",
             "description": "ThinkSystem SR635는 가상화, 데이터베이스 및 스케일 아웃 소프트웨어 정의 스토리지를 위해 조정 된 1U / 1P 랙 서버입니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR635/p/77XX7SRSR35",
             "dataSheet": "https://lenovopress.com/ds0099",
@@ -33,7 +33,7 @@
         },
         {
             "name": "ThinkSystem SR650",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr650.webp",
             "description": "Lenovo ThinkSystem SR650은 비즈니스 크리티컬 워크로드를 위한 유연한 스토리지 및 I/O, 업계 최고의 안정성을 통해 속도와 확장성을 제공하도록 설계된 2소켓 랙 서버입니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR650/p/77XX7SRSR65",
             "dataSheet": "https://lenovopress.com/datasheet/ds0032",
@@ -50,7 +50,7 @@
         },
         {
             "name": "ThinkSystem SR665",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr665.webp",
             "description": "A 2P/2U rack server powered by dual AMD EPYC™ 7003 Series CPUs.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR665/p/77XX7SR552S",
             "dataSheet": "https://lenovopress.com/DS0109",
@@ -66,7 +66,7 @@
         },
         {
             "name": "ThinkSystem SR530",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr530.webp",
             "description": "ThinkServer SR530은 엔트리 클라우드, 호스팅, 파일 서비스 및 스케일 아웃 워크로드를 처리할 수 있게 설계되었고, 가격 부담이 적으며 이상적인 2프로세서, 1U 랙 서버입니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR530/p/77XX7SRSR53",
             "dataSheet": "https://lenovopress.com/datasheet/ds0002",
@@ -82,7 +82,7 @@
         },
         {
             "name": "ThinkSystem SR550",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr550.webp",
             "description": "2U ThinkSystem SR550 2P 랙 서버는 프로세싱 성능과 스토리지 용량, 비용의 균형이 맞도록 설계되었습니다. 선택 가능한 I/O 옵션과 계층화된 시스템 관리를 제공합니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR550/p/77XX7SRSR55",
             "dataSheet": "https://lenovopress.com/datasheet/ds0030",
@@ -98,7 +98,7 @@
         },
         {
             "name": "ThinkSystem SR570",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr570.webp",
             "description": "높은 가용성, 신뢰성, 성능, 보안, 간편한 관리 및 빠른 서비스를 제공하는 경제적인 1U 랙 서버",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR570/p/77XX7SRSR57",
             "dataSheet": "https://lenovopress.com/ds0015",
@@ -114,7 +114,7 @@
         },
         {
             "name": "ThinkSystem SR590",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr590.webp",
             "description": "높은 가용성, 신뢰성, 성능, 보안, 간편한 관리 및 빠른 서비스를 제공하는 경제적인 2U 랙 서버",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR590/p/77XX7SRSR59",
             "dataSheet": "https://lenovopress.com/ds0016",
@@ -129,7 +129,7 @@
         },
         {
             "name": "ThinkSystem SR630",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr630.webp",
             "description": "다용성과 뛰어난 안정성을 갖춘 1U ThinkSystem SR630 2P 랙 서버는 IT 인프라 및 HPC부터 클라우드 및 하이퍼 컨버지드까지 대부분의 데이터 센터 워크로드를 처리할 수 있게 설계되었습니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR630/p/77XX7SRSR63",
             "dataSheet": "https://lenovopress.com/datasheet/ds0031",
@@ -145,7 +145,7 @@
         },
         {
             "name": "ThinkSystem SR630 V2 Rack Server",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr630-v2.webp",
             "description": "다재다능하고 신뢰성이 높은 1U ThinkSystem SR630 V2 2P 랙 서버는 IT 인프라 및 HPC에서 클라우드 및 하이퍼컨버지드에 이르는 하이브리드 데이터 센터 워크로드를 처리하도록 설계되었습니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/intel-server-products/ThinkSystem-SR630-V2/p/77XX7SR63V2",
             "dataSheet": "https://lenovopress.com/DS0125",
@@ -162,7 +162,7 @@
         },
         {
             "name": "ThinkSystem SR645",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr645.webp",
             "description": "2개의 AMD EPYC™ 7003 시리즈 CPU로 구동되는 2S/1U 랙 서버.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR645/p/77XX7SR352S",
             "dataSheet": "https://lenovopress.com/DS0110",
@@ -177,7 +177,7 @@
         },
         {
             "name": "ThinkSystem SR650 V2 Rack Server",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr650-v2.webp",
             "description": "Lenovo ThinkSystem SR650 V2는 비즈니스 크리티컬 워크로드를 위한 유연한 스토리지, I/O 및 업계 1위의 안정성을 갖춘 속도와 확장을 위해 설계된 2소켓 랙 서버입니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/intel-server-products/ThinkSystem-SR650-V2/p/77XX7SR65V2",
             "dataSheet": "http://lenovopress.com/DS0126",
@@ -193,7 +193,7 @@
         },
         {
             "name": "ThinkSystem SR655",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr655.webp",
             "description": "ThinkSystem SR655는 GPU 집약적 및 소프트웨어 정의 워크로드에 최적화된 2U/1P 랙 서버입니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR655/p/77XX7SRSR75",
             "dataSheet": "https://lenovopress.com/ds0103",
@@ -209,7 +209,7 @@
         },
         {
             "name": "ThinkSystem SR670",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr670.webp",
             "description": "SR670은 최고 사양의 GPU 가속화가 필요한 HPC 및 AI 워크로 드를 위한 확장 가능한 성능을 제공합니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/Thinksystem-SR670/p/77XX7SRSR67",
             "dataSheet": "https://lenovopress.com/DS0054",
@@ -223,7 +223,7 @@
         },
         {
             "name": "ThinkSystem SR670 V2",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/sr670-v2.webp",
             "description": "동급 최고의 GPU 가속을 활용하여 AI, HPC 및 그래픽 워크로드를 위한 확장 가능하고 최적의 성능을 제공하도록 설계되었습니다.",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR670-V2/p/77XX7SR67V2",
             "dataSheet": "https://lenovopress.com/ds0123",

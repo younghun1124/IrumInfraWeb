@@ -156,7 +156,7 @@ const IconStyle = {
 
 const Span = styled.span`
     color: #191f28;
-
+    width: 100%;
     font-size: 1.8rem;
 `;
 
@@ -205,7 +205,7 @@ const CarouselUnit = ({ src, children, title, text }) => {
 
 const FlexCenter = css`
     display: flex;
-    min-width: 100px;
+
     min-height: 150px;
     justify-content: space-between;
     align-items: center;

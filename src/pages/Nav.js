@@ -60,12 +60,12 @@ const Nav = () => {
                 </SubMenu>
                 <SubMenu key='workstation' title='워크스테이션'>
                     <Menu.Item key='setting:9'>
-                        <NavLink to='workstation/towerWorkstation'>
+                        <NavLink to='workstation/tower'>
                             Tower Workstation
                         </NavLink>
                     </Menu.Item>
                     <Menu.Item key='setting:10'>
-                        <NavLink to='workstation/mobileWorkStation'>
+                        <NavLink to='workstation/mobile'>
                             Mobile WorkStation
                         </NavLink>
                     </Menu.Item>

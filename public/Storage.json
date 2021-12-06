@@ -2,7 +2,7 @@
     "models": [
         {
             "name": "ThinkSystem DE Series Hybrid Array",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/de-h.PNG",
             "description": "ThinkSystem DE 시리즈 하이브리드 플래시 어레이.",
             "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-de-series/ThinkSystem-DE-Series-Hybrid-Flash-Array/p/WMD00000374",
             "dataSheet": "http://lenovopress.com/datasheet/ds0049-lenovo-thinksystem-de-series-hybrid-array",
@@ -15,7 +15,7 @@
         },
         {
             "name": "ThinkSystem DE Series All Falsh Array",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-rack-servers-thinksystem-sr635-series.png?context=bWFzdGVyfHJvb3R8NDk1Njl8aW1hZ2UvcG5nfGg1Yi9oNzMvMTA1MzY5NDE3ODEwMjIucG5nfDA2NDI4YjNiMmEwMjJjNzhmMWVlZWNiNjFlYzI1NGQxNGI0YjEyMGMzZTJhMzYyZWE0ZTg1NTIxM2M4OThhN2U&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/de-f.PNG",
             "description": "ThinkSystem DE 시리즈 전체 플래시 어레이",
             "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-de-series/ThinkSystem-DE-Series-All-Flash-Array/p/WMD00000373",
             "dataSheet": "http://lenovopress.com/datasheet/ds0051-lenovo-thinksystem-de-series-all-flash-array",
@@ -28,7 +28,7 @@
         },
         {
             "name": "ThinkSystem DM Series Hybrid Array",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/dm-h.PNG",
             "description": "ThinkSystem DM Series Hybrid Flash",
             "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-dm-series/ThinkSystem-DM-Series-Hybrid-Flash-Array/p/WMD00000376",
             "dataSheet": "http://lenovopress.com/datasheet/ds0048-lenovo-thinksystem-dm-series-hybrid-array",
@@ -41,7 +41,7 @@
         },
         {
             "name": "ThinkSystem DM Series All Falsh Array",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/dm-f.PNG",
             "description": "ThinkSystem DM Series All Falsh Array",
             "moreInfoLink": "http://www.lenovo.com/kr/ko/data-center/storage/storage-area-network/thinksystem-dm-series/ThinkSystem-DM-Series-All-Flash-Array/p/WMD00000375",
             "dataSheet": "http://lenovopress.com/datasheet/ds0047-lenovo-dm-series-all-flash-array",
@@ -55,7 +55,7 @@
         },
         {
             "name": "Lenovo D1224 Direct Attached Storage",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/d1224.webp",
             "description": "D1224 Direct Attached Storage",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/servers/racks/ThinkSystem-SR530/p/77XX7SRSR53",
             "dataSheet": "https://en.resources.lenovo.com/data-sheets/lenovo-storage-d1224",
@@ -71,7 +71,7 @@
         },
         {
             "name": "Lenovo D1212 Direct Attached Storage",
-            "imgLink": "https://www.lenovo.com/medias/lenovo-data-center-servers-rack-thinksystem-sr250-series.png?context=bWFzdGVyfHJvb3R8MTc2NzN8aW1hZ2UvcG5nfGg3OS9oMGQvOTgzOTg4NDczMDM5OC5wbmd8NGY2Y2U3ZTM2ZGFlNTFmOGUwY2I2ZDkzNmU2MWQ5N2MyNTI0ZDc2N2U0MDM5ZWRmMGQyZDdmM2NmYTFlZjU1OQ&w=1920",
+            "imgLink": "http://www.iruminfra.co.kr/irum/svr/img/d1212.webp",
             "description": "D1212 Direct Attached Storage",
             "moreInfoLink": "https://www.lenovo.com/kr/ko/data-center/storage/direct-attached-storage/Lenovo-D1212-DAS/p/77X2CRB1212",
             "dataSheet": "https://en.resources.lenovo.com/data-sheets/lenovo-storage-d1212",
