@@ -1,4 +1,11 @@
-import { Home, Nav, Intro, Hardware, WorkStation, PCAndLaptop } from './pages';
+import {
+    Home,
+    Nav,
+    Intro,
+    ServerAndStorage,
+    WorkStation,
+    PCAndLaptop,
+} from './pages';
 import { Routes, Route } from 'react-router-dom';
 import { Layout, BackTop } from 'antd';
 /** @jsxImportSource @emotion/react */
@@ -39,7 +46,7 @@ function App() {
                         <Route path='/introduction/*' element={<Intro />} />
                         <Route
                             path='/server&storage/*'
-                            element={<Hardware />}
+                            element={<ServerAndStorage />}
                         />
                         <Route
                             path='/workstation/*'

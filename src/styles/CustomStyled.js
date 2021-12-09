@@ -7,7 +7,20 @@ export const InnerContainer = styled.div`
     margin: auto;
 `;
 
-// const CustomStyled = {
-//     InnerContainer,
-// };
-// export default CustomStyled;
+export function HeadThumbnail({ src }) {
+    const Div = styled.div`
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        background-image: url(${src});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 6rem;
+    `;
+    return <Div></Div>;
+}

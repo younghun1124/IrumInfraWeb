@@ -50,12 +50,12 @@ const Partners = () => {
                 >
                     vmware
                 </Partner>
-                <Partner
+                {/* <Partner
                     imgLink='/Intro/Partners/Tidalscale.png'
                     hyperLink='http://www.tidalscale.com/'
                 >
                     Tidalscale
-                </Partner>
+                </Partner> */}
             </GridDiv>
         </Zoom>
     );
