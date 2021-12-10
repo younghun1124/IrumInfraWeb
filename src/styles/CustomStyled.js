@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import theme from './theme';
+import { NavLink } from 'react-router-dom';
 
 export const InnerContainer = styled.div`
     ${theme.common.flexCenter}
@@ -24,3 +25,15 @@ export function HeadThumbnail({ src }) {
     `;
     return <Div></Div>;
 }
+
+export const NavLinkStyle = styled(NavLink)`
+    display: inline;
+    color: white;
+    &:hover {
+        color: #cfad65;
+    }
+`;
+
+const activeStyle = {
+    color: '#cfad65',
+};

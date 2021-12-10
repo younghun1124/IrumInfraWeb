@@ -39,29 +39,45 @@ const MainImg = styled.div`
     background-position: center;
 `;
 
-const SubNav = () => {
+function SubNav() {
+    const StyledNavLink = styled(NavLink)`
+        text-decoration: ${(props) => {
+            return props.style
+                ? (isActive) => (isActive ? 'underline' : 'none')
+                : 'none';
+        }};
+        &:hover {
+            text-decoration: underline;
+        }
+    `;
     const SubNavDiv = styled.div`
         display: flex;
         width: 100%;
         justify-content: space-around;
     `;
+    let activeStyle = {
+        textDecoration: 'underline',
+    };
     return (
         <SubNavDiv>
-            <NavLink
-                className={({ isActive }) =>
-                    'nav-link' + (isActive ? ' activated' : '')
+            <NavLink to='messages'>Messages</NavLink>
+            <StyledNavLink
+                style={(props) =>
+                    props ? console.log(props) : console.log(props)
                 }
                 to='welcome'
             >
                 인사말
-            </NavLink>
-            <NavLink to='businessArea'>사업영역</NavLink>
-            <NavLink to='organization'>조직도</NavLink>
-            <NavLink to='partners'>주요협력사</NavLink>
-            <NavLink to='location'>찾아오시는 길</NavLink>
+            </StyledNavLink>
+            <StyledNavLink to='businessArea'>사업영역</StyledNavLink>
+            <StyledNavLink to='/introduction/organization'>
+                조직도
+            </StyledNavLink>
+            <StyledNavLink to='partners'>주요협력사</StyledNavLink>
+            <StyledNavLink to='location'>찾아오시는 길</StyledNavLink>
         </SubNavDiv>
     );
-};
+}
 
 const Organization = () => {
     return (
