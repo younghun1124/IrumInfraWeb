@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 import BusinessArea from '../components/BusinessArea';
 import Partners from '../components/Partners';
 import { InnerContainer } from '../styles/CustomStyled';
+import { Nav } from '.';
 const { Title, Text, Paragraph } = Typography;
 const Intro = () => {
     return (
@@ -38,7 +39,6 @@ const MainImg = styled.div`
     background-size: cover;
     background-position: center;
 `;
-
 function SubNav() {
     const StyledNavLink = styled(NavLink)`
         text-decoration: ${(props) => {
@@ -62,9 +62,7 @@ function SubNav() {
         <SubNavDiv>
             <NavLink to='messages'>Messages</NavLink>
             <StyledNavLink
-                style={(props) =>
-                    props ? console.log(props) : console.log(props)
-                }
+                style={(prop) => (prop ? console.log(prop) : console.log(prop))}
                 to='welcome'
             >
                 인사말
