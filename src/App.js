@@ -5,6 +5,7 @@ import {
     ServerAndStorage,
     WorkStation,
     PCAndLaptop,
+    Solution,
 } from './pages';
 import { Routes, Route } from 'react-router-dom';
 import { Layout, BackTop } from 'antd';
@@ -53,6 +54,7 @@ function App() {
                             element={<WorkStation />}
                         />
                         <Route path='/pc&laptop/*' element={<PCAndLaptop />} />
+                        <Route path='/solution/*' element={<Solution />} />
                     </Routes>
                 </Content>
                 <Footer
