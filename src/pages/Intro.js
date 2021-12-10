@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import BusinessArea from '../components/BusinessArea';
 import Partners from '../components/Partners';
 import { InnerContainer } from '../styles/CustomStyled';
-import { Nav } from '.';
+
 const { Title, Text, Paragraph } = Typography;
 const Intro = () => {
     return (
@@ -43,7 +43,8 @@ function SubNav() {
     const StyledNavLink = styled(NavLink)`
         text-decoration: ${(props) => {
             return props.style
-                ? (isActive) => (isActive ? 'underline' : 'none')
+                ? (isActive) =>
+                      isActive ? console.log(props) : console.log(props)
                 : 'none';
         }};
         &:hover {
@@ -62,7 +63,8 @@ function SubNav() {
         <SubNavDiv>
             <NavLink to='messages'>Messages</NavLink>
             <StyledNavLink
-                style={(prop) => (prop ? console.log(prop) : console.log(prop))}
+                // style={(prop) => (prop ? console.log(prop) : console.log(prop))}
+                style={{ color: 'red' }}
                 to='welcome'
             >
                 인사말
