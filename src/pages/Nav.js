@@ -82,21 +82,12 @@ const Nav = () => {
                 </SubMenu>
                 <SubMenu key='solution' title='솔루션'>
                     <Menu.Item key='setting:13'>
-                        <NavLink to='solution/Nutanix'>Nutanix</NavLink>
+                        <NavLink to='solution/nutanix'>Nutanix</NavLink>
                     </Menu.Item>
                     <Menu.Item key='setting:14'>
-                        <NavLink to='solution/Vmware'>Vmware</NavLink>
+                        <NavLink to='solution/vmware'>Vmware</NavLink>
                     </Menu.Item>
                 </SubMenu>
-
-                {/* <SubMenu key='service' title='서비스 사업'>
-                    <Menu.Item key='setting:13'>
-                        <Link to='service/maintenance'>IT유지보수</Link>
-                    </Menu.Item>
-                    <Menu.Item key='setting:14'>
-                        <Link to='service/transfer'>IT장비이전</Link>
-                    </Menu.Item>
-                </SubMenu> */}
             </Menu>
         </InnerContainer>
     );
