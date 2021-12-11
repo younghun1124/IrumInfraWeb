@@ -23,6 +23,7 @@ const colors = {
     footerDark: '#191f28',
     footerGray: '#b0b8c1',
     cardGray: '#f2f2f2',
+    antdBlue: '#40a9ff',
 };
 
 // 자주 사용하는 스타일 속성을 theme으로 만들어보자.

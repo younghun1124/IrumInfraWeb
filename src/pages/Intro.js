@@ -3,10 +3,10 @@ import styled from '@emotion/styled';
 import Fade from 'react-reveal/Fade';
 import { Routes, Route } from 'react-router-dom';
 import { Typography, Divider } from 'antd';
-import { NavLink } from 'react-router-dom';
 import BusinessArea from '../components/BusinessArea';
 import Partners from '../components/Partners';
 import { InnerContainer } from '../styles/CustomStyled';
+import { SubNav } from '../components/SubNav';
 
 const { Title, Text, Paragraph } = Typography;
 const Intro = () => {
@@ -39,46 +39,6 @@ const MainImg = styled.div`
     background-size: cover;
     background-position: center;
 `;
-function SubNav() {
-    const StyledNavLink = styled(NavLink)`
-        text-decoration: ${(props) => {
-            return props.style
-                ? (isActive) =>
-                      isActive ? console.log(props) : console.log(props)
-                : 'none';
-        }};
-        &:hover {
-            text-decoration: underline;
-        }
-    `;
-    const SubNavDiv = styled.div`
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-    `;
-    let activeStyle = {
-        textDecoration: 'underline',
-    };
-    return (
-        <SubNavDiv>
-            <NavLink to='messages'>Messages</NavLink>
-            <StyledNavLink
-                // style={(prop) => (prop ? console.log(prop) : console.log(prop))}
-                style={{ color: 'red' }}
-                to='welcome'
-            >
-                인사말
-            </StyledNavLink>
-            <StyledNavLink to='businessArea'>사업영역</StyledNavLink>
-            <StyledNavLink to='/introduction/organization'>
-                조직도
-            </StyledNavLink>
-            <StyledNavLink to='partners'>주요협력사</StyledNavLink>
-            <StyledNavLink to='location'>찾아오시는 길</StyledNavLink>
-        </SubNavDiv>
-    );
-}
-
 const Organization = () => {
     return (
         <FlexCenterDiv>

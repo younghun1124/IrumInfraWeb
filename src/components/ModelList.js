@@ -3,7 +3,7 @@ import axios from 'axios';
 import styled from '@emotion/styled';
 import { Button } from 'antd';
 import { BarChartOutlined, FileTextOutlined } from '@ant-design/icons';
-//TODO: json파일을 axios로 요청하는 코드 작성
+
 const ModelList = ({ jsonFileName }) => {
     const [modelList, setModelList] = useState(null);
     useEffect(() => {
@@ -17,8 +17,8 @@ const ModelList = ({ jsonFileName }) => {
     return (
         modelList && (
             <StyledUl>
-                {modelList.models.map((model) => (
-                    <StyledLi>
+                {modelList.models.map((model, index) => (
+                    <StyledLi key={index}>
                         <ModelCard>
                             <ModelImg src={model.imgLink} alt={model.name} />
                             <h2 style={{ textAlign: 'center' }}>
@@ -51,8 +51,8 @@ const ModelList = ({ jsonFileName }) => {
                             <p>{model.description}</p>
 
                             <ul style={{ listStyleType: 'disc' }}>
-                                {model.spec.map((element) => (
-                                    <li>{element}</li>
+                                {model.spec.map((element, idx) => (
+                                    <li key={idx}>{element}</li>
                                 ))}
                             </ul>
                             {model.moreInfoLink && (

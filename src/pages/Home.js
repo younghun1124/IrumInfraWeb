@@ -212,4 +212,5 @@ const FlexCenter = css`
     flex-direction: column;
     padding: 2rem;
 `;
+
 export default Home;
