@@ -15,18 +15,24 @@ export function HeadThumbnail({ src }) {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 700px;
+        height: 325px;
         background-image: url(${src});
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         font-size: 6rem;
     `;
     return <Div></Div>;
 }
 
 export const SubNav = styled.div`
+    color: white;
+    /* position: relative; */
+    bottom: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0, 0.5);
+    align-items: center;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 `;

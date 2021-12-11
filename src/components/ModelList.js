@@ -31,8 +31,7 @@ const ModelList = ({ jsonFileName }) => {
                                         rel='noreferrer'
                                         href={model.dataSheet}
                                     >
-                                        <BarChartOutlined />
-                                        DataSheet
+                                        <BarChartOutlined /> DataSheet
                                     </A>
                                 )}
                                 {model.guide && (
@@ -41,8 +40,7 @@ const ModelList = ({ jsonFileName }) => {
                                         rel='noreferrer'
                                         href={model.guide}
                                     >
-                                        <FileTextOutlined />
-                                        guide
+                                        <FileTextOutlined /> guide
                                     </A>
                                 )}
                             </LinkDiv>

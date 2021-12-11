@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import Fade from 'react-reveal/Fade';
 import { Routes, Route, NavLink } from 'react-router-dom';
-import { Typography, Divider } from 'antd';
+import { Typography } from 'antd';
 import BusinessArea from '../components/BusinessArea';
 import Partners from '../components/Partners';
 import { InnerContainer } from '../styles/CustomStyled';
-import { SubNav } from '../styles/CustomStyled';
+import { SubNav, HeadThumbnail } from '../styles/CustomStyled';
 
 const { Title, Paragraph } = Typography;
 const Intro = () => {
     return (
         <>
-            <MainImg />
-            <Divider />
+            <InnerContainer>
+                <HeadThumbnail src='/Intro/serverRoom.jpg' />
+            </InnerContainer>
+
             <InnerContainer>
                 <SubNav>
                     <NavLink to='welcome'>인사말</NavLink>
@@ -23,7 +25,7 @@ const Intro = () => {
                     <NavLink to='location'>찾아오시는 길</NavLink>
                 </SubNav>
             </InnerContainer>
-            <Divider />
+
             <InnerContainer>
                 <Routes>
                     <Route path='welcome' element={<Welcome />} />

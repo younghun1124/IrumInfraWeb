@@ -36,6 +36,7 @@ function App() {
                         display: flex;
                         flex-direction: column;
                         height: 100vh;
+                        margin-top: 64px;
                     `}
                 >
                     <Content
