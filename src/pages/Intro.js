@@ -1,21 +1,27 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import Fade from 'react-reveal/Fade';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import { Typography, Divider } from 'antd';
 import BusinessArea from '../components/BusinessArea';
 import Partners from '../components/Partners';
 import { InnerContainer } from '../styles/CustomStyled';
-import { SubNav } from '../components/SubNav';
+import { SubNav } from '../styles/CustomStyled';
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Paragraph } = Typography;
 const Intro = () => {
     return (
         <>
             <MainImg />
             <Divider />
             <InnerContainer>
-                <SubNav />
+                <SubNav>
+                    <NavLink to='welcome'>인사말</NavLink>
+                    <NavLink to='businessArea'>사업영역</NavLink>
+                    <NavLink to='organization'>조직도</NavLink>
+                    <NavLink to='partners'>주요협력사</NavLink>
+                    <NavLink to='location'>찾아오시는 길</NavLink>
+                </SubNav>
             </InnerContainer>
             <Divider />
             <InnerContainer>

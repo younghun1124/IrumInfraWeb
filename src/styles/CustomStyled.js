@@ -24,3 +24,9 @@ export function HeadThumbnail({ src }) {
     `;
     return <Div></Div>;
 }
+
+export const SubNav = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+`;

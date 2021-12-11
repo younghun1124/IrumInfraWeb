@@ -19,7 +19,6 @@ const GlobalStyle = () => {
             text-decoration: none;
             color: inherit;
         }
-
         a[class*='active'] {
             color: ${theme.colors.antdBlue};
         }

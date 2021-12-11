@@ -8,7 +8,7 @@ const { SubMenu } = Menu;
 const Nav = () => {
     const [current, setCurret] = useState('0');
     const handleClick = (e) => {
-        setCurret(e.key);
+        return null;
     };
     return (
         <InnerContainer
@@ -26,11 +26,7 @@ const Nav = () => {
                 </Link>
             </div>
 
-            <Menu
-                mode='horizontal'
-                onClick={handleClick}
-                selectedKeys={[current]}
-            >
+            <Menu mode='horizontal' selectedKeys={[current]}>
                 <SubMenu key='company' title='회사소개'>
                     <Menu.Item key='setting:1'>
                         <NavLink to='/introduction/welcome'>인사말</NavLink>
