@@ -20,13 +20,13 @@ function BusinessArea() {
                 <div css={FlexCenter}>
                     <h2 level={4}>솔루션 사업</h2>
                     <StyledImg src='/sol.png' alt='하드웨어 사업' />
-                    <p>강력한 성능의 모바일 워크스테이션 ThinkPad</p>
-                    <p>압도적인 성능과 내구성을 지닌 ThinkStation</p>
+                    <p>서버, 스토리지, 가상화일체형의 하이퍼컨버지드 Nutanix</p>
+                    <p>대표적인 가상화 소프트웨어 Vmware</p>
                 </div>
                 <div css={FlexCenter}>
                     <h2 level={4}>Contact us</h2>
                     <StyledImg src='/call center.png' alt='하드웨어 사업' />
-                    <p>TEL. 02-8577-008 FAX. 02-8577-009</p>
+                    <p>TEL. 02-857-7008 FAX. 02-857-7009</p>
                     <p>E-mail. mhjung@iruminfra.co.kr</p>
                 </div>
             </FlexDiv>
@@ -37,17 +37,22 @@ export default BusinessArea;
 
 const FlexDiv = styled.div`
     display: flex;
+    justify-content: space-around;
     ${({ theme }) => theme.device.tablet} {
         flex-direction: column;
     }
 `;
 const FlexCenter = css`
     display: flex;
-    flex-basis: 33%;
+    flex-basis: 30%;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
+    ${'' /* border: 1px solid gray; */}
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
 `;
 
 const StyledImg = styled.img`

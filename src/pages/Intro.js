@@ -26,7 +26,7 @@ const Intro = () => {
                 </SubNav>
             </InnerContainer>
 
-            <InnerContainer>
+            <InnerContainer style={{ padding: '100px 0 100px 0' }}>
                 <Routes>
                     <Route path='welcome' element={<Welcome />} />
                     <Route path='businessArea' element={<BusinessArea />} />
@@ -40,13 +40,6 @@ const Intro = () => {
 };
 export default Intro;
 
-const MainImg = styled.div`
-    background-image: url(/Intro/serverRoom.jpg);
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-`;
 const Organization = () => {
     return (
         <FlexCenterDiv>

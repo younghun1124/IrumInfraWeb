@@ -69,6 +69,7 @@ function App() {
                             background-color: ${theme.colors.footerDark};
                             width: 100%;
                             flex-shrink: 0;
+                            z-index: 1;
                         `}
                     >
                         <InnerContainer
@@ -96,9 +97,9 @@ function App() {
                                     font-size: 1.3rem;
                                 `}
                             >
-                                <a href='tel:02-8577-008'>TEL : 02-8577-008</a>
+                                <a href='tel:02-8577-008'>TEL : 02-857-7008</a>
                                 <br />
-                                FAX : 02-8577-009
+                                FAX : 02-857-7009
                                 <br />
                                 <a href='mailto:mhjung@iruminfra.co.kr'>
                                     e-Mail : mhjung@iruminfra.co.kr

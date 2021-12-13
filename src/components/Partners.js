@@ -79,9 +79,12 @@ const LogoImg = styled.img`
 `;
 
 const GridDiv = styled.div`
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25%, auto));
 
+    grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+    gap: 5%;
     ${({ theme }) => theme.device.tablet} {
         grid-template-columns: repeat(auto-fill, minmax(50%, auto));
     }
@@ -95,4 +98,8 @@ const GridItem = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
+    transition: all 0.1s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
 `;

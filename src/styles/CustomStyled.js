@@ -26,11 +26,10 @@ export function HeadThumbnail({ src }) {
 }
 
 export const SubNav = styled.div`
-    color: white;
     /* position: relative; */
     bottom: 50px;
     height: 50px;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: #f2f2f2;
     align-items: center;
     display: flex;
     width: 100%;

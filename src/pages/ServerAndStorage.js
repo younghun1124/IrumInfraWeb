@@ -24,12 +24,12 @@ const Hardware = () => {
                     }
                 />
             </Routes>
-            <InnerContainer>
+            {/* <InnerContainer>
                 <SubNav>
                     <NavLink to='server'>서버</NavLink>
                     <NavLink to='storage'>스토리지</NavLink>
                 </SubNav>
-            </InnerContainer>
+            </InnerContainer> */}
             <InnerContainer>
                 <div style={{ width: '100%', padding: '2rem' }}>
                     <Routes>
