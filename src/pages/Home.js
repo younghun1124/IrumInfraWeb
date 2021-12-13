@@ -30,17 +30,17 @@ const Home = () => {
                 `}
             >
                 <CarouselUnit
-                    src='Home/Intro-idc.jpg'
+                    src='/Home/Intro-idc.jpg'
                     text='고객과 미래를 함께하는'
                     title='(주) 이룸인프라'
                 />
                 <CarouselUnit
-                    src='Home/Intro-idc2.jpg'
+                    src='/Home/Intro-idc2.jpg'
                     text='Lenovo Server Storage NetWork'
                     title='ThinkSystem'
                 />
                 <CarouselUnit
-                    src='Home/Intro-idc3.jpg'
+                    src='/Home/Intro-idc3.jpg'
                     text='Lenovo Workstation'
                     title='ThinkStation'
                 />
