@@ -202,7 +202,7 @@ const CarouselUnit = ({ src, children, title, text }) => {
         justify-content: center;
         align-items: center;
 
-        height: 350px;
+        height: 770px;
         background-image: url(${src});
         background-position: center;
         background-repeat: no-repeat;
