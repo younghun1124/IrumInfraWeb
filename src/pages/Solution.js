@@ -71,7 +71,11 @@ function Vmware() {
                 <li>재해 복구 시간 절약</li>
                 <li>인프라 관리의 단순화</li>
             </ul>
-            <img src='/Solution/vmware.png' alt='vmware' />
+            <img
+                style={{ width: '100%' }}
+                src='/Solution/vmware.png'
+                alt='vmware'
+            />
         </>
     );
 }
