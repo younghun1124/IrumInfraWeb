@@ -150,10 +150,10 @@ const Home = () => {
                 <Title level={1}>Business Partner</Title>
             </Divider>
             <InnerContainer>
-                <div>
-                    <Title level={3}>파트너들과 최선을 다하고 있습니다.</Title>
-                    <Partners />
-                </div>
+                <Title level={3}>파트너들과 최선을 다하고 있습니다.</Title>
+            </InnerContainer>
+            <InnerContainer>
+                <Partners />
             </InnerContainer>
         </>
     );
