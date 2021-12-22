@@ -45,6 +45,7 @@ const Home = () => {
                 />
             </Carousel> */}
             <HeroSection />
+
             <div
                 css={css`
                     width: 100%;

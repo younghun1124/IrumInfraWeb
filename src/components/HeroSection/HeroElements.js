@@ -1,11 +1,13 @@
 import styled from '@emotion/styled';
+import { Typography } from 'antd';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
+const { Title } = Typography;
 export const HeroContainer = styled.div`
     background: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+
     height: 800px;
     top: 0;
 
@@ -15,7 +17,7 @@ export const HeroContainer = styled.div`
     /*aAdd :before styles*/
 `;
 export const HeroBg = styled.div`
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
@@ -42,8 +44,8 @@ export const HeroContent = styled.div`
     align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
-    color: #fff;
+export const HeroH1 = styled(Title)`
+    color: #fff !important;
     font-size: 48px;
     text-align: center;
     @media screen and(max-width:768px) {

@@ -16,16 +16,6 @@ const Nav = () => {
                 justify-content: space-between;
             `}
         >
-            <div>
-                <Link to='/'>
-                    <img
-                        src='/Logo.png'
-                        alt='이룸인프라 로고'
-                        style={{ width: '100px' }}
-                    />
-                </Link>
-            </div>
-
             <Menu
                 style={{ width: '100%', flex: '0 0 1', justifyContent: 'end' }}
                 mode='horizontal'

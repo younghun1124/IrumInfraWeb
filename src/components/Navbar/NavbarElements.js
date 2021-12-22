@@ -1,14 +1,16 @@
 import styled from '@emotion/styled';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
+import { Menu } from 'antd';
 export const Nav = styled.nav`
-    background: #000000;
-    height: 80px;
+    /* line-height: 64px; */
+    background: #fff;
+    height: 64px;
     /* margin-top: -80px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -20,7 +22,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 8px;
+    /* height: 8px; */
     z-index: 1;
     width: 100%;
     padding: 0 24px;
@@ -48,18 +50,19 @@ export const MobileIcon = styled.div`
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         cursor: pointer;
-        color: #fff;
+        color: #000;
     }
 `;
 
-export const NavMenu = styled.ul`
+export const NavMenu = styled(Menu)`
     display: flex;
     align-items: center;
     list-style: none;
     text-align: center;
     margin-right: -22px;
+    line-height: 64px;
 
     @media screen and (max-width: 768px) {
         display: none;
