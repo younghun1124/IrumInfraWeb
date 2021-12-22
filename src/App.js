@@ -1,12 +1,12 @@
 import {
     Home,
-    Nav,
     Intro,
     ServerAndStorage,
     WorkStation,
     PCAndLaptop,
     Solution,
 } from './pages';
+import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router-dom';
 import { Layout, BackTop } from 'antd';
 /** @jsxImportSource @emotion/react */
@@ -20,7 +20,7 @@ function App() {
         <>
             <BackTop />
             <Layout>
-                <Header
+                {/* <Header
                     style={{
                         position: 'fixed',
                         zIndex: 1,
@@ -28,9 +28,8 @@ function App() {
                         background: 'white',
                         borderBottom: '1px solid #f0f0f0',
                     }}
-                >
-                    <Nav />
-                </Header>
+                ></Header> */}
+                <Navbar />
                 <div
                     css={css`
                         display: flex;

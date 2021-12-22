@@ -15,13 +15,12 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
 import { InnerContainer } from '../styles/CustomStyled';
-
+import HeroSection from '../components/HeroSection';
 const { Title, Paragraph, Text } = Typography;
 const Home = () => {
-    const theme = useTheme();
     return (
         <>
-            <Carousel
+            {/* <Carousel
                 effect='fade'
                 dots={false}
                 autoplay
@@ -44,12 +43,13 @@ const Home = () => {
                     text='Lenovo Workstation'
                     title='ThinkStation'
                 />
-            </Carousel>
-
+            </Carousel> */}
+            <HeroSection />
             <div
                 css={css`
                     width: 100%;
                     background-color: #f5f5f5;
+                    z-index: 10;
                 `}
                 justify='space-between'
             >
