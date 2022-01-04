@@ -142,7 +142,7 @@ const Home = () => {
                                 align-items: center;
                             `}
                         >
-                            <img src='/logo.png' style={{ height: '250px' }} />
+                            <img src='/Logo.png' style={{ height: '250px' }} />
                             <div>
                                 <Title level={4}>
                                     이룸 (Irum) :고객과 파트너의Win-Win을 통한

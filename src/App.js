@@ -47,12 +47,14 @@ function App() {
                     display: flex;
                     flex-direction: column;
                     height: 100%;
+                    flex: 1 0 auto;
                 `}
             >
                 <Content
                     css={css`
                         background-color: white;
                         flex: 1 0 auto;
+                        min-height: 100vh; //footer 바닥고정을 위한 속성
                     `}
                 >
                     <Routes>

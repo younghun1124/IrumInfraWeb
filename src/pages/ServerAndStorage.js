@@ -41,7 +41,7 @@ const Storage = () => {
                     <HeadTitle>
                         관리성, 확장성이 뛰어난 엔터프라이즈급 스토리지 솔루션
                     </HeadTitle>
-                    <ModelList jsonFileName={'storage.json'} />
+                    <ModelList jsonFileName={'Storage.json'} />
                 </div>
             </InnerContainer>
         </>
