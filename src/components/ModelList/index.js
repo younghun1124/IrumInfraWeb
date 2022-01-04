@@ -15,7 +15,7 @@ const ModelList = ({ jsonFileName }) => {
     const [modelList, setModelList] = useState(null);
     useEffect(() => {
         async function getModelJson() {
-            const result = await axios.get(`/${jsonFileName}`);
+            const result = await axios.get(`/ModelJson/${jsonFileName}`);
             console.log(result);
             setModelList(result.data);
         }
