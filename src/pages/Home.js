@@ -128,35 +128,114 @@ const Home = () => {
                 </InnerPaddingContainer>
             </div>
 
-            <GradientBg>
-                <InnerPaddingContainer>
-                    <div>
-                        <Fade bottom>
-                            <Title level={1}>Business Area</Title>
-                            <BuisnessArea />
-                        </Fade>
-                    </div>
-                </InnerPaddingContainer>
-                <InnerPaddingContainer>
-                    <div>
-                        <Fade bottom>
-                            <Title level={1}>Business Partner</Title>
-                            <Title style={{ color: '#8b95a1' }} level={3}>
-                                파트너들과 최선을 다하고 있습니다.
-                            </Title>
-                            <Partners />
-                        </Fade>
-                    </div>
-                </InnerPaddingContainer>
-            </GradientBg>
+            <InnerPaddingContainer>
+                <div>
+                    <Fade left>
+                        <Title level={1}>이룸인프라?</Title>
+                        <Title style={{ color: '#8b95a1' }} level={3}>
+                            이룸인프라(Iruminfra) : IT 기반으로 고객과 파트너의
+                            성공을 이룬다
+                        </Title>
+                        <div
+                            css={css`
+                                display: flex;
+                                align-items: center;
+                            `}
+                        >
+                            <img src='/logo.png' style={{ height: '250px' }} />
+                            <div>
+                                <Title level={4}>
+                                    이룸 (Irum) :고객과 파트너의Win-Win을 통한
+                                    성공을 이루다.
+                                </Title>
+                                <Title level={4}>
+                                    인프라(Infra) : IT의 기반이 되는 초석을
+                                    다진다.
+                                </Title>
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+            </InnerPaddingContainer>
+            <InnerPaddingContainer>
+                <div>
+                    <Fade right>
+                        <Title level={1}>ThinkSystem</Title>
+                        <Title style={{ color: '#8b95a1' }} level={3}>
+                            Lenovo의 ThinkSystem 서버는 ITIC의 2021년 글로벌
+                            서버 하드웨어 서버 OS 안정성 설문조사에서 모든 Intel
+                            x86 기반 플랫폼 중에서 8년 연속 최고의 안정성과 가동
+                            시간을 기록했습니다.
+                        </Title>
+                        <img
+                            src='http://www.iruminfra.co.kr/irum/intro/TS.jpg'
+                            alt='thinkstation'
+                            style={{ width: '100%' }}
+                        />
+                    </Fade>
+                </div>
+            </InnerPaddingContainer>
+            <InnerPaddingContainer>
+                <div>
+                    <Fade left>
+                        <Title level={1}>ThinkStation</Title>
+
+                        <div
+                            css={css`
+                                background-image: url('http://www.iruminfra.co.kr/irum/intro/WS.png');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                width: 100%;
+                                height: 500px;
+                                padding: 20px;
+                            `}
+                        >
+                            <div
+                                css={css`
+                                    width: 50%;
+                                `}
+                            >
+                                <Title style={{ color: '#fff' }} level={3}>
+                                    Lenovo 워크스테이션은 고객 중심의 혁신으로
+                                    설계되어 최고 수준의 성능, 사용 편의성 및
+                                    업계 최고의 안정성을 제공합니다. 독창적인
+                                    ThinkStation 모듈식 설계로 업그레이드 및
+                                    사용자 정의가 수월하고 수많은 가능한 구성을
+                                    지원합니다. 혁신적인 디자인과 최신 Intel®
+                                    Xeon® CPU 및 NVIDIA® Quadro® GPU의 조합은
+                                    아이디어를 현실로 만드는 최고의 사용자
+                                    경험을 제공합니다.
+                                </Title>
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+            </InnerPaddingContainer>
+            <InnerPaddingContainer>
+                <div>
+                    <Fade bottom>
+                        <Title level={1}>Business Area</Title>
+                        <BuisnessArea />
+                    </Fade>
+                </div>
+            </InnerPaddingContainer>
+            <InnerPaddingContainer>
+                <div>
+                    <Fade bottom>
+                        <Title level={1}>Business Partner</Title>
+                        <Title style={{ color: '#8b95a1' }} level={3}>
+                            파트너들과 최선을 다하고 있습니다.
+                        </Title>
+                        <Partners />
+                    </Fade>
+                </div>
+            </InnerPaddingContainer>
         </>
     );
 };
 const IconStyle = {
     fontSize: '7rem',
 };
-
-const GradientBg = styled.div``;
 
 const Card = styled.div`
     width: 270px;
