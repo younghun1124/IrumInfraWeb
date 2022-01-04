@@ -12,7 +12,6 @@ export const HeroContainer = styled.div`
     top: 0;
 
     width: 100%;
-    z-index: -1;
 
     /*aAdd :before styles*/
 `;

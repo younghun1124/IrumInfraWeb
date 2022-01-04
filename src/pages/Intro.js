@@ -52,7 +52,11 @@ const Organization = () => {
                         "영업, 기술 조직의 신속한 협력으로 고객 만족에 최선을
                         다하고 있습니다."
                     </Title>
-                    <img src='/Intro/Organization.png' alt='조직도' />
+                    <img
+                        style={{ width: '100%' }}
+                        src='/Intro/Organization.png'
+                        alt='조직도'
+                    />
                 </div>
             </Fade>
         </FlexCenterDiv>

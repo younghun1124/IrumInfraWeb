@@ -14,11 +14,7 @@ import {
 import { Menu, Affix, Row, Col, Layout } from 'antd';
 import { Link, NavLink } from 'react-router-dom';
 const { SubMenu } = Menu;
-const Navbar = ({ toggle }) => {
-    const [current, setCurret] = useState('0');
-    const handleClick = (e) => {
-        setCurret(e.key);
-    };
+const Navbar = ({ toggle, current, handleClick }) => {
     return (
         <>
             <Nav>

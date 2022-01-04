@@ -11,10 +11,10 @@ import {
 } from '@ant-design/icons';
 /** @jsxImportSource @emotion/react */
 import { jsx, css, useTheme } from '@emotion/react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-reveal';
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
-import { InnerContainer } from '../styles/CustomStyled';
+import { InnerContainer, InnerPaddingContainer } from '../styles/CustomStyled';
 import HeroSection from '../components/HeroSection';
 const { Title, Paragraph, Text } = Typography;
 const Home = () => {
@@ -50,34 +50,28 @@ const Home = () => {
                 css={css`
                     width: 100%;
                     background-color: #f5f5f5;
-                    z-index: 10;
                 `}
                 justify='space-between'
             >
-                <InnerContainer
+                <InnerPaddingContainer
                     css={css`
                         flex-direction: column;
                         min-height: 400px;
-                        padding: 100px 0 100px 0;
+                        gap: 100px;
                         justify-content: space-around;
                         min-height: 900px;
                     `}
                 >
                     <Zoom>
-                        <h2
+                        <Title
                             css={css`
-                                color: #037dcc;
+                                color: #037dcc !important;
                                 text-align: center;
-                                margin-bottom: 0.5em;
-
-                                font-weight: 600;
-                                font-size: 5rem;
-                                line-height: 1.23;
                             `}
                             level={1}
                         >
                             이룸인프라는
-                        </h2>
+                        </Title>
                     </Zoom>
                     <Title level={2}>
                         <Fade cascade right>
@@ -131,31 +125,30 @@ const Home = () => {
                             </Card>
                         </Fade>
                     </div>
-                </InnerContainer>
+                </InnerPaddingContainer>
             </div>
 
-            <div>
-                <Divider orientation='center'>
-                    <Title level={1}>Business Area</Title>
-                </Divider>
-                <InnerContainer
-                    css={css`
-                        padding-top: 60px;
-                        padding-bottom: 60px;
-                    `}
-                >
-                    <BuisnessArea />
-                </InnerContainer>
-            </div>
-            <Divider orientation='center'>
-                <Title level={1}>Business Partner</Title>
-            </Divider>
-            <InnerContainer>
-                <Title level={3}>파트너들과 최선을 다하고 있습니다.</Title>
-            </InnerContainer>
-            <InnerContainer>
-                <Partners />
-            </InnerContainer>
+            <GradientBg>
+                <InnerPaddingContainer>
+                    <div>
+                        <Fade bottom>
+                            <Title level={1}>Business Area</Title>
+                            <BuisnessArea />
+                        </Fade>
+                    </div>
+                </InnerPaddingContainer>
+                <InnerPaddingContainer>
+                    <div>
+                        <Fade bottom>
+                            <Title level={1}>Business Partner</Title>
+                            <Title style={{ color: '#8b95a1' }} level={3}>
+                                파트너들과 최선을 다하고 있습니다.
+                            </Title>
+                            <Partners />
+                        </Fade>
+                    </div>
+                </InnerPaddingContainer>
+            </GradientBg>
         </>
     );
 };
@@ -163,16 +156,19 @@ const IconStyle = {
     fontSize: '7rem',
 };
 
+const GradientBg = styled.div``;
+
 const Card = styled.div`
-    width: 100%;
+    width: 270px;
     display: flex;
     min-height: 200px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     padding: 2rem;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 2.6rem;
     transition: all 0.1s linear;
     box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px,
         rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;

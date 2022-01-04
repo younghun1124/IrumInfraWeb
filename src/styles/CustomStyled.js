@@ -6,6 +6,10 @@ export const InnerContainer = styled.div`
     max-width: 1140px;
     margin: auto;
 `;
+export const InnerPaddingContainer = styled(InnerContainer)`
+    padding-top: 250px;
+    padding-bottom: 250px;
+`;
 
 export function HeadThumbnail({ src }) {
     const Div = styled.div`

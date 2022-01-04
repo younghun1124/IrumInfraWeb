@@ -21,13 +21,26 @@ function App() {
     const toggle = () => {
         setIsOpen(!isOpen);
     };
+    const [navCurrent, setNavCurret] = useState('0');
+    const handleNavClick = (e) => {
+        setNavCurret(e.key);
+    };
     return (
         <>
             <BackTop />
 
-            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Sidebar
+                isOpen={isOpen}
+                toggle={toggle}
+                current={navCurrent}
+                handleClick={handleNavClick}
+            />
 
-            <Navbar toggle={toggle} />
+            <Navbar
+                toggle={toggle}
+                current={navCurrent}
+                handleClick={handleNavClick}
+            />
 
             <div
                 css={css`

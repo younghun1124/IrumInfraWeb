@@ -58,10 +58,9 @@ const Partners = () => {
 const Partner = ({ imgLink, hyperLink, children }) => {
     return (
         <GridItem>
-            <h2>{children}</h2>
-            <LogoImg alt={children} src={imgLink} />
             <a target='_blank' rel='noreferrer' href={hyperLink}>
-                Read more {'>'}
+                <h2>{children}</h2>
+                <LogoImg alt={children} src={imgLink} />
             </a>
         </GridItem>
     );
