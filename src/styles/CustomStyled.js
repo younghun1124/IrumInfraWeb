@@ -3,6 +3,7 @@ import theme from './theme';
 
 export const InnerContainer = styled.div`
 	${theme.common.flexCenter}
+	flex-direction: column;
 	max-width: 1310px;
 	margin: auto;
 `;

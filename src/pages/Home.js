@@ -3,7 +3,15 @@ import { Carousel, Typography, Divider, Row } from 'antd';
 import BuisnessArea from '../components/BusinessArea';
 import Partners from '../components/Partners';
 import styled from '@emotion/styled';
-import { GraySpan, FlexCol, GrayBg, WSimg } from './HomeElement';
+import {
+	GraySpan,
+	FlexRow,
+	FlexCol,
+	GrayBg,
+	WSimg,
+	Card,
+	CardGrid,
+} from './HomeElement';
 import {
 	QuestionCircleOutlined,
 	RiseOutlined,
@@ -49,38 +57,43 @@ const Home = () => {
 			{/* <HeroSection /> */}
 			<InnerContainer
 				css={css`
-					padding: 0;
-					padding-top: 100px;
-					justify-content: space-between;
+					padding: 100px 50px 100px 50px;
 				`}
 			>
-				<FlexCol
+				<FlexRow
 					css={css`
-						margin-left: 30px;
+						width: 100%;
+						justify-content: space-around;
 					`}
 				>
-					<img src='/Logo.png' style={{ width: '224px' }} />
-					<span
+					<FlexCol
 						css={css`
-							font-weight: bold;
-							font-size: 30px;
+							margin-left: 30px;
 						`}
 					>
-						(주)이룸인프라
-					</span>
-				</FlexCol>
-				<FlexCol
-					css={css`
-						justify-content: space-between;
-						width: 550px;
-					`}
-				>
-					<GraySpan>고객의 만족을 최우선으로 생각합니다</GraySpan>
-					<GraySpan>
-						(주)이룸인프라는 IT 전문회사로써 고객만족을 위해 최적의
-						하드웨어와 솔루션을 고객께 제공하고 있습니다.
-					</GraySpan>
-				</FlexCol>
+						<img src='/Logo.png' style={{ width: '224px' }} />
+						<span
+							css={css`
+								font-weight: bold;
+								font-size: 30px;
+							`}
+						>
+							(주)이룸인프라
+						</span>
+					</FlexCol>
+					<FlexCol
+						css={css`
+							justify-content: space-between;
+							width: 550px;
+						`}
+					>
+						<GraySpan>고객의 만족을 최우선으로 생각합니다</GraySpan>
+						<GraySpan>
+							(주)이룸인프라는 IT 전문회사로써 고객만족을 위해
+							최적의 하드웨어와 솔루션을 고객께 제공하고 있습니다.
+						</GraySpan>
+					</FlexCol>
+				</FlexRow>
 			</InnerContainer>
 			<Divider></Divider>
 			<div
@@ -93,19 +106,12 @@ const Home = () => {
 					css={css`
 						flex-direction: column;
 						gap: 100px;
-						justify-content: space-around;
+						justify-content: center;
 						padding-top: 100px;
 						padding-bottom: 90px;
 					`}
 				>
-					<div
-						css={css`
-							display: flex;
-							justify-content: space-between;
-							width: 100%;
-							flex-wrap: wrap;
-						`}
-					>
+					<CardGrid>
 						<Fade left>
 							<Card>
 								<QuestionCircleOutlined
@@ -144,18 +150,27 @@ const Home = () => {
 								</Span>
 							</Card>
 						</Fade>
-					</div>
+					</CardGrid>
 				</InnerContainer>
 			</div>
 
-			<InnerContainer
+			<div
 				css={css`
 					background-image: url('http://www.iruminfra.co.kr/irum/xd/hexBg.svg');
 				`}
 			>
-				<div>
-					<Fade right>
-						<img src='/Home/ThinkSystem.svg' />
+				<Fade right>
+					<InnerContainer
+						css={css`
+							padding: 100px 40px 100px 40px;
+						`}
+					>
+						<img
+							css={css`
+								align-self: start;
+							`}
+							src='/Home/ThinkSystem.svg'
+						/>
 						<GraySpan
 							style={{ color: '#878892', fontSize: '22px' }}
 						>
@@ -167,39 +182,55 @@ const Home = () => {
 						<img
 							src='/Home/TS.svg'
 							alt='thinkstation'
-							style={{ maxWidth: '820px' }}
+							style={{ width: '820px' }}
 						/>
-					</Fade>
-				</div>
-			</InnerContainer>
+					</InnerContainer>
+				</Fade>
+			</div>
 
 			<GrayBg>
-				<InnerContainer>
-					<Fade left>
-						<img src='/Home/ThinkStation.svg' />
-						<WSimg src='/Home/WS.svg' />
-
-						<GraySpan
-							style={{
-								color: '#fff',
-								fontWeight: 'normal',
-							}}
+				<Fade left>
+					<InnerContainer
+						css={css`
+							padding: 100px 40px 100px 40px;
+						`}
+					>
+						<img
+							css={css`
+								align-self: start;
+							`}
+							src='/Home/ThinkStation.svg'
+						/>
+						<FlexRow
+							css={css`
+								margin-top: 40px;
+							`}
 						>
-							Lenovo 워크스테이션은 고객 중심의 혁신으로 설계되어
-							최고 수준의 성능, 사용 편의성 및 업계 최고의
-							안정성을 제공합니다. 독창적인 ThinkStation 모듈식
-							설계로 업그레이드 및 사용자 정의가 수월하고 수많은
-							가능한 구성을 지원합니다. 혁신적인 디자인과 최신
-							Intel® Xeon® CPU 및 NVIDIA® Quadro® GPU의 조합은
-							아이디어를 현실로 만드는 최고의 사용자 경험을
-							제공합니다.
-						</GraySpan>
-					</Fade>
-				</InnerContainer>
+							<GraySpan
+								style={{
+									position: 'relative',
+									color: '#fff',
+									fontWeight: 'normal',
+									zIndex: '1',
+								}}
+							>
+								Lenovo 워크스테이션은 고객 중심의 혁신으로
+								설계되어 최고 수준의 성능, 사용 편의성 및 업계
+								최고의 안정성을 제공합니다. 독창적인
+								ThinkStation 모듈식 설계로 업그레이드 및 사용자
+								정의가 수월하고 수많은 가능한 구성을 지원합니다.
+								혁신적인 디자인과 최신 Intel® Xeon® CPU 및
+								NVIDIA® Quadro® GPU의 조합은 아이디어를 현실로
+								만드는 최고의 사용자 경험을 제공합니다.
+							</GraySpan>
+							<WSimg src='/Home/WS.svg' />
+						</FlexRow>
+					</InnerContainer>
+				</Fade>
 			</GrayBg>
 			<InnerContainer
 				css={css`
-					padding: 140px 0 140px 0;
+					padding: 100px 40px 100px 40px;
 				`}
 			>
 				<div>
@@ -219,7 +250,7 @@ const Home = () => {
 			<GrayBg
 				css={css`
 					background-color: #d2d5dd;
-					padding: 180px 0 180px 0;
+					padding: 100px 40px 100px 40px;
 				`}
 			>
 				<InnerContainer>
@@ -241,39 +272,12 @@ const IconStyle = {
 	fontSize: '7rem',
 };
 
-const Card = styled.div`
-	width: 307px;
-	display: flex;
-	min-height: 160px;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	padding: 2rem;
-	background-color: white;
-	border-radius: 2.6rem;
-	transition: all 0.1s linear;
-	box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px,
-		rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
-	&:hover {
-		transform: scale(1.1);
-	}
-`;
-
 const Span = styled.span`
 	color: #191f28;
 	width: 100%;
 	font-size: 1.8rem;
 `;
-const FlexCenter = css`
-	display: flex;
 
-	min-height: 150px;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	padding: 2rem;
-`;
 const CarouselUnit = ({ src, children, title, text }) => {
 	const CarouselDiv = styled.div`
 		color: white;
