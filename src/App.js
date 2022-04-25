@@ -24,8 +24,12 @@ function App() {
 	const [navCurrent, setNavCurret] = useState('0');
 	const handleNavClick = (e) => {
 		setNavCurret(e.key);
+	};
+	const handleSideBarClick = (e) => {
+		setNavCurret(e.key);
 		toggle();
 	};
+
 	return (
 		<>
 			<BackTop />
@@ -34,7 +38,7 @@ function App() {
 				isOpen={isOpen}
 				toggle={toggle}
 				current={navCurrent}
-				handleClick={handleNavClick}
+				handleClick={handleSideBarClick}
 			/>
 
 			<Navbar
