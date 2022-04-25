@@ -89,7 +89,7 @@ const Home = () => {
 					>
 						<GraySpan>고객의 만족을 최우선으로 생각합니다</GraySpan>
 						<GraySpan>
-							(주)이룸인프라는 IT 전문회사로써 고객만족을 위해
+							(주)이룸인프라는 IT 전문회사로서 고객 만족을 위해
 							최적의 하드웨어와 솔루션을 고객께 제공하고 있습니다.
 						</GraySpan>
 					</FlexCol>
@@ -201,7 +201,7 @@ const Home = () => {
 							`}
 							src='/Home/ThinkStation.svg'
 						/>
-						<FlexRow
+						<FlexCol
 							css={css`
 								margin-top: 40px;
 							`}
@@ -224,7 +224,7 @@ const Home = () => {
 								만드는 최고의 사용자 경험을 제공합니다.
 							</GraySpan>
 							<WSimg src='/Home/WS.svg' />
-						</FlexRow>
+						</FlexCol>
 					</InnerContainer>
 				</Fade>
 			</GrayBg>

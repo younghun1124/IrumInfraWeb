@@ -24,6 +24,7 @@ function App() {
 	const [navCurrent, setNavCurret] = useState('0');
 	const handleNavClick = (e) => {
 		setNavCurret(e.key);
+		toggle();
 	};
 	return (
 		<>

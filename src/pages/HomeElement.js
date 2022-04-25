@@ -22,6 +22,7 @@ export const WSimg = styled.img`
 	transition: all 0.1s linear;
 	z-index: 0;
 	position: relative;
+	align-self: center;
 	&:hover {
 		transform: scale(1.5);
 	}
